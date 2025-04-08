@@ -1,473 +1,1013 @@
-Classe,level_1,antecedents,consequents,support,confidence,lift
-ethnicity,150,"frozenset({'obama', 'fuck'})","frozenset({'ass', 'dumb'})",0.12185929648241206,0.9076023391812865,3.7529946077314498
-ethnicity,149,"frozenset({'obama', 'dumb'})","frozenset({'ass', 'fuck'})",0.12185929648241206,0.9076023391812865,3.7529946077314498
-ethnicity,148,"frozenset({'ass', 'fuck'})","frozenset({'obama', 'dumb'})",0.12185929648241206,0.5038961038961038,3.7529946077314493
-ethnicity,147,"frozenset({'ass', 'dumb'})","frozenset({'obama', 'fuck'})",0.12185929648241206,0.5038961038961038,3.7529946077314493
-ethnicity,218,"frozenset({'ass', 'fuck', 'dumb'})","frozenset({'nigger', 'obama'})",0.11385050251256282,0.4754098360655738,3.7514372194121117
-ethnicity,235,"frozenset({'nigger', 'obama'})","frozenset({'ass', 'fuck', 'dumb'})",0.11385050251256282,0.8983890954151178,3.7514372194121117
-ethnicity,224,"frozenset({'nigger', 'obama', 'dumb'})","frozenset({'ass', 'fuck'})",0.11385050251256282,0.9028642590286425,3.7334023386327244
-ethnicity,229,"frozenset({'ass', 'fuck'})","frozenset({'nigger', 'obama', 'dumb'})",0.11385050251256282,0.4707792207792208,3.7334023386327244
-ethnicity,226,"frozenset({'nigger', 'obama', 'fuck'})","frozenset({'ass', 'dumb'})",0.11385050251256282,0.9028642590286425,3.7334023386327244
-ethnicity,227,"frozenset({'ass', 'dumb'})","frozenset({'nigger', 'obama', 'fuck'})",0.11385050251256282,0.4707792207792208,3.7334023386327244
-ethnicity,178,"frozenset({'ass', 'fuck'})","frozenset({'nigger', 'obama'})",0.11385050251256282,0.4707792207792208,3.71489724649576
-ethnicity,175,"frozenset({'nigger', 'obama'})","frozenset({'ass', 'fuck'})",0.11385050251256282,0.8983890954151178,3.71489724649576
-ethnicity,164,"frozenset({'ass', 'dumb'})","frozenset({'nigger', 'obama'})",0.11385050251256282,0.4707792207792208,3.71489724649576
-ethnicity,161,"frozenset({'nigger', 'obama'})","frozenset({'ass', 'dumb'})",0.11385050251256282,0.8983890954151178,3.71489724649576
-ethnicity,231,"frozenset({'obama', 'dumb'})","frozenset({'nigger', 'ass', 'fuck'})",0.11385050251256282,0.847953216374269,3.7035432660297287
-ethnicity,222,"frozenset({'nigger', 'ass', 'fuck'})","frozenset({'obama', 'dumb'})",0.11385050251256282,0.49725651577503427,3.7035432660297287
-ethnicity,219,"frozenset({'nigger', 'ass', 'dumb'})","frozenset({'obama', 'fuck'})",0.11385050251256282,0.4965753424657534,3.698469919089962
-ethnicity,234,"frozenset({'obama', 'fuck'})","frozenset({'nigger', 'ass', 'dumb'})",0.11385050251256282,0.847953216374269,3.698469919089962
-ethnicity,144,"frozenset({'ass', 'fuck', 'dumb'})",frozenset({'obama'}),0.12185929648241206,0.5088524590163934,3.6948374675215434
-ethnicity,153,frozenset({'obama'}),"frozenset({'ass', 'fuck', 'dumb'})",0.12185929648241206,0.8848346636259977,3.6948374675215434
-ethnicity,57,"frozenset({'ass', 'fuck'})",frozenset({'obama'}),0.12185929648241206,0.5038961038961038,3.6588487908898397
-ethnicity,45,"frozenset({'ass', 'dumb'})",frozenset({'obama'}),0.12185929648241206,0.5038961038961038,3.6588487908898397
-ethnicity,48,frozenset({'obama'}),"frozenset({'ass', 'dumb'})",0.12185929648241206,0.8848346636259977,3.6588487908898397
-ethnicity,60,frozenset({'obama'}),"frozenset({'ass', 'fuck'})",0.12185929648241206,0.8848346636259977,3.6588487908898397
-ethnicity,214,"frozenset({'nigger', 'ass', 'fuck', 'dumb'})",frozenset({'obama'}),0.11385050251256282,0.5006906077348067,3.635573306790478
-ethnicity,239,frozenset({'obama'}),"frozenset({'nigger', 'ass', 'fuck', 'dumb'})",0.11385050251256282,0.8266818700114026,3.6355733067904774
-ethnicity,174,"frozenset({'nigger', 'ass'})","frozenset({'obama', 'fuck'})",0.11385050251256282,0.48723118279569894,3.6288750550210653
-ethnicity,160,"frozenset({'nigger', 'ass'})","frozenset({'obama', 'dumb'})",0.11385050251256282,0.48723118279569894,3.6288750550210653
-ethnicity,230,"frozenset({'nigger', 'ass'})","frozenset({'obama', 'fuck', 'dumb'})",0.11385050251256282,0.48723118279569894,3.6288750550210653
-ethnicity,179,"frozenset({'obama', 'fuck'})","frozenset({'nigger', 'ass'})",0.11385050251256282,0.847953216374269,3.628875055021065
-ethnicity,165,"frozenset({'obama', 'dumb'})","frozenset({'nigger', 'ass'})",0.11385050251256282,0.847953216374269,3.628875055021065
-ethnicity,223,"frozenset({'obama', 'fuck', 'dumb'})","frozenset({'nigger', 'ass'})",0.11385050251256282,0.847953216374269,3.628875055021065
-ethnicity,182,frozenset({'obama'}),"frozenset({'nigger', 'ass', 'fuck'})",0.11385050251256282,0.8266818700114026,3.6106379617507622
-ethnicity,171,"frozenset({'nigger', 'ass', 'fuck'})",frozenset({'obama'}),0.11385050251256282,0.49725651577503427,3.6106379617507622
-ethnicity,168,frozenset({'obama'}),"frozenset({'nigger', 'ass', 'dumb'})",0.11385050251256282,0.8266818700114026,3.605691882351104
-ethnicity,157,"frozenset({'nigger', 'ass', 'dumb'})",frozenset({'obama'}),0.11385050251256282,0.4965753424657534,3.6056918823511035
-ethnicity,145,"frozenset({'obama', 'fuck', 'dumb'})",frozenset({'ass'}),0.12185929648241206,0.9076023391812865,3.594285880538826
-ethnicity,59,frozenset({'ass'}),"frozenset({'obama', 'fuck'})",0.12185929648241206,0.4825870646766169,3.594285880538826
-ethnicity,46,"frozenset({'obama', 'dumb'})",frozenset({'ass'}),0.12185929648241206,0.9076023391812865,3.594285880538826
-ethnicity,58,"frozenset({'obama', 'fuck'})",frozenset({'ass'}),0.12185929648241206,0.9076023391812865,3.594285880538826
-ethnicity,152,frozenset({'ass'}),"frozenset({'obama', 'fuck', 'dumb'})",0.12185929648241206,0.4825870646766169,3.594285880538826
-ethnicity,47,frozenset({'ass'}),"frozenset({'obama', 'dumb'})",0.12185929648241206,0.4825870646766169,3.594285880538826
-ethnicity,167,frozenset({'ass'}),"frozenset({'nigger', 'obama', 'dumb'})",0.11385050251256282,0.45087064676616917,3.575522140232833
-ethnicity,181,frozenset({'ass'}),"frozenset({'nigger', 'obama', 'fuck'})",0.11385050251256282,0.45087064676616917,3.575522140232833
-ethnicity,237,frozenset({'ass'}),"frozenset({'nigger', 'obama', 'fuck', 'dumb'})",0.11385050251256282,0.45087064676616917,3.575522140232833
-ethnicity,158,"frozenset({'nigger', 'obama', 'dumb'})",frozenset({'ass'}),0.11385050251256282,0.9028642590286425,3.5755221402328328
-ethnicity,216,"frozenset({'nigger', 'obama', 'fuck', 'dumb'})",frozenset({'ass'}),0.11385050251256282,0.9028642590286425,3.5755221402328328
-ethnicity,172,"frozenset({'nigger', 'obama', 'fuck'})",frozenset({'ass'}),0.11385050251256282,0.9028642590286425,3.5755221402328328
-ethnicity,63,"frozenset({'nigger', 'obama'})",frozenset({'ass'}),0.11400753768844221,0.8996282527881041,3.5627069115389594
-ethnicity,66,frozenset({'ass'}),"frozenset({'nigger', 'obama'})",0.11400753768844221,0.4514925373134328,3.5627069115389594
-ethnicity,67,frozenset({'obama'}),"frozenset({'nigger', 'ass'})",0.11400753768844221,0.8278221208665907,3.542722624783904
-ethnicity,62,"frozenset({'nigger', 'ass'})",frozenset({'obama'}),0.11400753768844221,0.48790322580645157,3.5427226247839037
-ethnicity,6,frozenset({'ass'}),frozenset({'obama'}),0.12201633165829145,0.4832089552238806,3.508636974761313
-ethnicity,7,frozenset({'obama'}),frozenset({'ass'}),0.12201633165829145,0.8859749144811858,3.5086369747613126
-ethnicity,146,"frozenset({'ass', 'obama'})","frozenset({'fuck', 'dumb'})",0.12185929648241206,0.9987129987129988,1.6566304703840524
-ethnicity,151,"frozenset({'fuck', 'dumb'})","frozenset({'ass', 'obama'})",0.12185929648241206,0.20213597290961188,1.6566304703840522
-ethnicity,221,"frozenset({'nigger', 'ass', 'obama'})","frozenset({'fuck', 'dumb'})",0.11385050251256282,0.9986225895316805,1.6564805027709668
-ethnicity,232,"frozenset({'fuck', 'dumb'})","frozenset({'nigger', 'ass', 'obama'})",0.11385050251256282,0.1888512633498307,1.6564805027709668
-ethnicity,188,"frozenset({'nigger', 'obama'})","frozenset({'fuck', 'dumb'})",0.1260992462311558,0.9950433705080546,1.6505434184410763
-ethnicity,193,"frozenset({'fuck', 'dumb'})","frozenset({'nigger', 'obama'})",0.1260992462311558,0.20916905444126077,1.6505434184410763
-ethnicity,96,frozenset({'dumb'}),"frozenset({'obama', 'fuck'})",0.13426507537688442,0.21883798310724342,1.6298950601484516
-ethnicity,93,"frozenset({'obama', 'fuck'})",frozenset({'dumb'}),0.13426507537688442,1.0,1.6298950601484516
-ethnicity,185,"frozenset({'nigger', 'obama', 'fuck'})",frozenset({'dumb'}),0.1260992462311558,1.0,1.6298950601484516
-ethnicity,143,"frozenset({'ass', 'obama', 'fuck'})",frozenset({'dumb'}),0.12185929648241206,1.0,1.6298950601484516
-ethnicity,196,frozenset({'dumb'}),"frozenset({'nigger', 'obama', 'fuck'})",0.1260992462311558,0.20552853852060407,1.6298950601484516
-ethnicity,238,frozenset({'dumb'}),"frozenset({'nigger', 'ass', 'obama', 'fuck'})",0.11385050251256282,0.18556437164064501,1.6298950601484516
-ethnicity,215,"frozenset({'nigger', 'ass', 'obama', 'fuck'})",frozenset({'dumb'}),0.11385050251256282,1.0,1.6298950601484516
-ethnicity,154,frozenset({'dumb'}),"frozenset({'ass', 'obama', 'fuck'})",0.12185929648241206,0.198617865369849,1.6298950601484514
-ethnicity,44,"frozenset({'ass', 'obama'})",frozenset({'dumb'}),0.12185929648241206,0.9987129987129988,1.6277973831083636
-ethnicity,49,frozenset({'dumb'}),"frozenset({'ass', 'obama'})",0.12185929648241206,0.198617865369849,1.6277973831083634
-ethnicity,156,"frozenset({'nigger', 'ass', 'obama'})",frozenset({'dumb'}),0.11385050251256282,0.9986225895316805,1.6276500256303408
-ethnicity,169,frozenset({'dumb'}),"frozenset({'nigger', 'ass', 'obama'})",0.11385050251256282,0.18556437164064501,1.6276500256303408
-ethnicity,104,"frozenset({'nigger', 'obama'})",frozenset({'dumb'}),0.1260992462311558,0.9950433705080546,1.6218162742245437
-ethnicity,109,frozenset({'dumb'}),"frozenset({'nigger', 'obama'})",0.1260992462311558,0.20552853852060407,1.6218162742245437
-ethnicity,129,"frozenset({'nigger', 'ass', 'fuck'})",frozenset({'dumb'}),0.22738693467336685,0.9931412894375857,1.6187160816837844
-ethnicity,140,frozenset({'dumb'}),"frozenset({'nigger', 'ass', 'fuck'})",0.22738693467336685,0.3706168415664193,1.6187160816837844
-ethnicity,95,frozenset({'obama'}),"frozenset({'fuck', 'dumb'})",0.13426507537688442,0.9749144811858609,1.6171543152361456
-ethnicity,94,"frozenset({'fuck', 'dumb'})",frozenset({'obama'}),0.13426507537688442,0.22271424850221413,1.6171543152361456
-ethnicity,205,"frozenset({'nigger', 'dumb'})","frozenset({'rt', 'fuck'})",0.10489949748743718,0.17870518994114498,1.6141768078655478
-ethnicity,204,"frozenset({'rt', 'fuck'})","frozenset({'nigger', 'dumb'})",0.10489949748743718,0.9475177304964538,1.6141768078655478
-ethnicity,132,"frozenset({'nigger', 'ass'})","frozenset({'fuck', 'dumb'})",0.22738693467336685,0.9731182795698925,1.6141748383175505
-ethnicity,137,"frozenset({'fuck', 'dumb'})","frozenset({'nigger', 'ass'})",0.22738693467336685,0.37718155769731704,1.6141748383175503
-ethnicity,36,frozenset({'dumb'}),"frozenset({'ass', 'fuck'})",0.2394786432160804,0.3903250575889429,1.6140194589132393
-ethnicity,33,"frozenset({'ass', 'fuck'})",frozenset({'dumb'}),0.2394786432160804,0.9902597402597402,1.6140194589132393
-ethnicity,228,"frozenset({'ass', 'obama'})","frozenset({'nigger', 'fuck', 'dumb'})",0.11385050251256282,0.9330759330759332,1.6106878671259264
-ethnicity,225,"frozenset({'nigger', 'fuck', 'dumb'})","frozenset({'ass', 'obama'})",0.11385050251256282,0.1965302249932231,1.6106878671259262
-ethnicity,210,frozenset({'dumb'}),"frozenset({'rt', 'nigger', 'fuck'})",0.10489949748743718,0.17097517276682878,1.6082273267048237
-ethnicity,199,"frozenset({'rt', 'nigger', 'fuck'})",frozenset({'dumb'}),0.10489949748743718,0.9867060561299852,1.6082273267048237
-ethnicity,99,"frozenset({'rt', 'fuck'})",frozenset({'dumb'}),0.1088253768844221,0.9829787234042553,1.6021521655076267
-ethnicity,102,frozenset({'dumb'}),"frozenset({'rt', 'fuck'})",0.1088253768844221,0.17737394420271307,1.6021521655076267
-ethnicity,133,"frozenset({'nigger', 'dumb'})","frozenset({'ass', 'fuck'})",0.22738693467336685,0.38737292669876944,1.6018122059855608
-ethnicity,136,"frozenset({'ass', 'fuck'})","frozenset({'nigger', 'dumb'})",0.22738693467336685,0.9402597402597402,1.6018122059855606
-ethnicity,192,"frozenset({'obama', 'fuck'})","frozenset({'nigger', 'dumb'})",0.1260992462311558,0.9391812865497077,1.5999749686325677
-ethnicity,189,"frozenset({'nigger', 'dumb'})","frozenset({'obama', 'fuck'})",0.1260992462311558,0.21482075976458,1.5999749686325677
-ethnicity,43,frozenset({'dumb'}),"frozenset({'nigger', 'ass'})",0.2292713567839196,0.37368825185564375,1.5992249918123247
-ethnicity,38,"frozenset({'nigger', 'ass'})",frozenset({'dumb'}),0.2292713567839196,0.9811827956989247,1.5992249918123247
-ethnicity,155,frozenset({'fuck'}),"frozenset({'ass', 'obama', 'dumb'})",0.12185929648241206,0.19473023839397743,1.5979924717691345
-ethnicity,240,frozenset({'fuck'}),"frozenset({'nigger', 'ass', 'obama', 'dumb'})",0.11385050251256282,0.1819322459222083,1.5979924717691343
-ethnicity,197,frozenset({'fuck'}),"frozenset({'nigger', 'obama', 'dumb'})",0.1260992462311558,0.20150564617314934,1.5979924717691343
-ethnicity,213,"frozenset({'nigger', 'ass', 'obama', 'dumb'})",frozenset({'fuck'}),0.11385050251256282,1.0,1.5979924717691343
-ethnicity,97,frozenset({'fuck'}),"frozenset({'obama', 'dumb'})",0.13426507537688442,0.21455457967377667,1.5979924717691343
-ethnicity,142,"frozenset({'ass', 'obama', 'dumb'})",frozenset({'fuck'}),0.12185929648241206,1.0,1.5979924717691343
-ethnicity,92,"frozenset({'obama', 'dumb'})",frozenset({'fuck'}),0.13426507537688442,1.0,1.5979924717691343
-ethnicity,184,"frozenset({'nigger', 'obama', 'dumb'})",frozenset({'fuck'}),0.1260992462311558,1.0,1.5979924717691343
-ethnicity,206,"frozenset({'nigger', 'fuck'})","frozenset({'rt', 'dumb'})",0.10489949748743718,0.17732943987257763,1.5972190567306568
-ethnicity,203,"frozenset({'rt', 'dumb'})","frozenset({'nigger', 'fuck'})",0.10489949748743718,0.9448373408769448,1.5972190567306568
-ethnicity,87,"frozenset({'nigger', 'fuck'})",frozenset({'dumb'}),0.5793027638190955,0.9792938677993098,1.596146237559766
-ethnicity,90,frozenset({'dumb'}),"frozenset({'nigger', 'fuck'})",0.5793027638190955,0.9442027130790889,1.5961462375597657
-ethnicity,56,"frozenset({'ass', 'obama'})",frozenset({'fuck'}),0.12185929648241206,0.9987129987129988,1.5959358534013492
-ethnicity,61,frozenset({'fuck'}),"frozenset({'ass', 'obama'})",0.12185929648241206,0.19473023839397743,1.5959358534013492
-ethnicity,183,frozenset({'fuck'}),"frozenset({'nigger', 'ass', 'obama'})",0.11385050251256282,0.1819322459222083,1.5957913802102237
-ethnicity,170,"frozenset({'nigger', 'ass', 'obama'})",frozenset({'fuck'}),0.11385050251256282,0.9986225895316805,1.5957913802102237
-ethnicity,72,frozenset({'dumb'}),"frozenset({'bitch', 'fuck'})",0.10521356783919598,0.17148707448169953,1.5942039274444708
-ethnicity,69,"frozenset({'bitch', 'fuck'})",frozenset({'dumb'}),0.10521356783919598,0.9781021897810219,1.5942039274444708
-ethnicity,233,"frozenset({'nigger', 'dumb'})","frozenset({'ass', 'obama', 'fuck'})",0.11385050251256282,0.19395398608881756,1.591622401306173
-ethnicity,220,"frozenset({'ass', 'obama', 'fuck'})","frozenset({'nigger', 'dumb'})",0.11385050251256282,0.9342783505154639,1.5916224013061728
-ethnicity,121,frozenset({'fuck'}),"frozenset({'nigger', 'obama'})",0.1260992462311558,0.20150564617314934,1.5900718151556568
-ethnicity,116,"frozenset({'nigger', 'obama'})",frozenset({'fuck'}),0.1260992462311558,0.9950433705080546,1.5900718151556565
-ethnicity,163,"frozenset({'ass', 'obama'})","frozenset({'nigger', 'dumb'})",0.11385050251256282,0.9330759330759332,1.589573981227272
-ethnicity,162,"frozenset({'nigger', 'dumb'})","frozenset({'ass', 'obama'})",0.11385050251256282,0.19395398608881756,1.5895739812272718
-ethnicity,135,"frozenset({'ass', 'dumb'})","frozenset({'nigger', 'fuck'})",0.22738693467336685,0.9402597402597402,1.5894807608107315
-ethnicity,134,"frozenset({'nigger', 'fuck'})","frozenset({'ass', 'dumb'})",0.22738693467336685,0.3843907618794797,1.5894807608107315
-ethnicity,18,frozenset({'obama'}),frozenset({'dumb'}),0.13426507537688442,0.9749144811858609,1.5890082969520252
-ethnicity,19,frozenset({'dumb'}),frozenset({'obama'}),0.13426507537688442,0.21883798310724342,1.5890082969520252
-ethnicity,191,"frozenset({'obama', 'dumb'})","frozenset({'nigger', 'fuck'})",0.1260992462311558,0.9391812865497077,1.5876576673078147
-ethnicity,190,"frozenset({'nigger', 'fuck'})","frozenset({'obama', 'dumb'})",0.1260992462311558,0.21316697637377224,1.5876576673078147
-ethnicity,128,"frozenset({'nigger', 'ass', 'dumb'})",frozenset({'fuck'}),0.22738693467336685,0.9917808219178083,1.584858287069662
-ethnicity,141,frozenset({'fuck'}),"frozenset({'nigger', 'ass', 'dumb'})",0.22738693467336685,0.36336260978670015,1.584858287069662
-ethnicity,32,"frozenset({'ass', 'dumb'})",frozenset({'fuck'}),0.2394786432160804,0.9902597402597402,1.5824276100311232
-ethnicity,37,frozenset({'fuck'}),"frozenset({'ass', 'dumb'})",0.2394786432160804,0.3826850690087829,1.582427610031123
-ethnicity,195,frozenset({'obama'}),"frozenset({'nigger', 'fuck', 'dumb'})",0.1260992462311558,0.9156214367160777,1.580557687451337
-ethnicity,186,"frozenset({'nigger', 'fuck', 'dumb'})",frozenset({'obama'}),0.1260992462311558,0.21767416644076987,1.580557687451337
-ethnicity,217,"frozenset({'ass', 'obama', 'dumb'})","frozenset({'nigger', 'fuck'})",0.11385050251256282,0.9342783505154639,1.5793694016677657
-ethnicity,236,"frozenset({'nigger', 'fuck'})","frozenset({'ass', 'obama', 'dumb'})",0.11385050251256282,0.192460844173082,1.5793694016677657
-ethnicity,176,"frozenset({'nigger', 'fuck'})","frozenset({'ass', 'obama'})",0.11385050251256282,0.192460844173082,1.577336751215169
-ethnicity,177,"frozenset({'ass', 'obama'})","frozenset({'nigger', 'fuck'})",0.11385050251256282,0.9330759330759332,1.577336751215169
-ethnicity,86,"frozenset({'nigger', 'dumb'})",frozenset({'fuck'}),0.5793027638190955,0.9868913857677903,1.5770450049107376
-ethnicity,91,frozenset({'fuck'}),"frozenset({'nigger', 'dumb'})",0.5793027638190955,0.9257214554579675,1.5770450049107374
-ethnicity,68,"frozenset({'bitch', 'dumb'})",frozenset({'fuck'}),0.10521356783919598,0.9867452135493374,1.576811422806068
-ethnicity,73,frozenset({'fuck'}),"frozenset({'bitch', 'dumb'})",0.10521356783919598,0.1681304893350063,1.576811422806068
-ethnicity,79,frozenset({'dumb'}),"frozenset({'bitch', 'nigger'})",0.10034547738693467,0.16355259790120297,1.5732672861553785
-ethnicity,74,"frozenset({'bitch', 'nigger'})",frozenset({'dumb'}),0.10034547738693467,0.9652567975830815,1.5732672861553783
-ethnicity,35,frozenset({'ass'}),"frozenset({'fuck', 'dumb'})",0.2394786432160804,0.9483830845771144,1.5731449550891026
-ethnicity,34,"frozenset({'fuck', 'dumb'})",frozenset({'ass'}),0.2394786432160804,0.39723886428757493,1.5731449550891026
-ethnicity,211,frozenset({'fuck'}),"frozenset({'rt', 'nigger', 'dumb'})",0.10489949748743718,0.16762860727728984,1.5721045230364974
-ethnicity,198,"frozenset({'rt', 'nigger', 'dumb'})",frozenset({'fuck'}),0.10489949748743718,0.98379970544919,1.5721045230364974
-ethnicity,15,frozenset({'fuck'}),frozenset({'dumb'}),0.602858040201005,0.9633626097867001,1.5701799588230627
-ethnicity,14,frozenset({'dumb'}),frozenset({'fuck'}),0.602858040201005,0.9825953416943947,1.5701799588230627
-ethnicity,103,frozenset({'fuck'}),"frozenset({'rt', 'dumb'})",0.1088253768844221,0.1739021329987453,1.5663490564865772
-ethnicity,98,"frozenset({'rt', 'dumb'})",frozenset({'fuck'}),0.1088253768844221,0.9801980198019802,1.5663490564865772
-ethnicity,50,"frozenset({'nigger', 'ass'})",frozenset({'fuck'}),0.22895728643216082,0.9798387096774194,1.5657748816124986
-ethnicity,55,frozenset({'fuck'}),"frozenset({'nigger', 'ass'})",0.22895728643216082,0.36587202007528236,1.5657748816124986
-ethnicity,0,frozenset({'ass'}),frozenset({'dumb'}),0.24183417085427136,0.9577114427860697,1.5609691496446614
-ethnicity,1,frozenset({'dumb'}),frozenset({'ass'}),0.24183417085427136,0.3941643204504735,1.5609691496446612
-ethnicity,105,"frozenset({'nigger', 'dumb'})",frozenset({'obama'}),0.1260992462311558,0.21482075976458,1.559838766454784
-ethnicity,108,frozenset({'obama'}),"frozenset({'nigger', 'dumb'})",0.1260992462311558,0.9156214367160777,1.559838766454784
-ethnicity,25,frozenset({'fuck'}),frozenset({'obama'}),0.13426507537688442,0.21455457967377667,1.5579060015537172
-ethnicity,24,frozenset({'obama'}),frozenset({'fuck'}),0.13426507537688442,0.9749144811858609,1.557906001553717
-ethnicity,139,frozenset({'ass'}),"frozenset({'nigger', 'fuck', 'dumb'})",0.22738693467336685,0.900497512437811,1.5544505717549417
-ethnicity,130,"frozenset({'nigger', 'fuck', 'dumb'})",frozenset({'ass'}),0.22738693467336685,0.3925182976416373,1.5544505717549417
-ethnicity,207,"frozenset({'fuck', 'dumb'})","frozenset({'rt', 'nigger'})",0.10489949748743718,0.1740036467830164,1.5540746461630415
-ethnicity,202,"frozenset({'rt', 'nigger'})","frozenset({'fuck', 'dumb'})",0.10489949748743718,0.9368863955119214,1.5540746461630415
-ethnicity,110,"frozenset({'rt', 'nigger'})",frozenset({'dumb'}),0.10662688442211055,0.9523141654978962,1.552172154054416
-ethnicity,115,frozenset({'dumb'}),"frozenset({'rt', 'nigger'})",0.10662688442211055,0.17379063219861787,1.552172154054416
-ethnicity,117,"frozenset({'nigger', 'fuck'})",frozenset({'obama'}),0.1260992462311558,0.21316697637377224,1.5478304510241525
-ethnicity,120,frozenset({'obama'}),"frozenset({'nigger', 'fuck'})",0.1260992462311558,0.9156214367160777,1.5478304510241525
-ethnicity,42,frozenset({'ass'}),"frozenset({'nigger', 'dumb'})",0.2292713567839196,0.9079601990049752,1.5467871983048909
-ethnicity,39,"frozenset({'nigger', 'dumb'})",frozenset({'ass'}),0.2292713567839196,0.39058319957196364,1.5467871983048906
-ethnicity,85,frozenset({'fuck'}),"frozenset({'bitch', 'nigger'})",0.10034547738693467,0.1603513174404015,1.5424730958617472
-ethnicity,80,"frozenset({'bitch', 'nigger'})",frozenset({'fuck'}),0.10034547738693467,0.9652567975830815,1.5424730958617472
-ethnicity,51,"frozenset({'nigger', 'fuck'})",frozenset({'ass'}),0.22895728643216082,0.3870453942129015,1.5327767850421372
-ethnicity,54,frozenset({'ass'}),"frozenset({'nigger', 'fuck'})",0.22895728643216082,0.9067164179104478,1.5327767850421372
-ethnicity,2,frozenset({'ass'}),frozenset({'fuck'}),0.24183417085427136,0.9577114427860697,1.5304156756992953
-ethnicity,3,frozenset({'fuck'}),frozenset({'ass'}),0.24183417085427136,0.3864491844416562,1.5304156756992953
-ethnicity,122,"frozenset({'rt', 'nigger'})",frozenset({'fuck'}),0.10631281407035176,0.9495091164095372,1.5173084198986029
-ethnicity,127,frozenset({'fuck'}),"frozenset({'rt', 'nigger'})",0.10631281407035176,0.1698870765370138,1.5173084198986029
-ethnicity,70,"frozenset({'fuck', 'dumb'})",frozenset({'bitch'}),0.10521356783919598,0.1745246157853608,1.5141318165138657
-ethnicity,71,frozenset({'bitch'}),"frozenset({'fuck', 'dumb'})",0.10521356783919598,0.9128065395095367,1.5141318165138657
-ethnicity,9,frozenset({'dumb'}),frozenset({'bitch'}),0.10662688442211055,0.17379063219861787,1.5077639589111698
-ethnicity,8,frozenset({'bitch'}),frozenset({'dumb'}),0.10662688442211055,0.925068119891008,1.5077639589111695
-ethnicity,11,frozenset({'fuck'}),frozenset({'bitch'}),0.10756909547738694,0.17189460476787957,1.4913145002205137
-ethnicity,10,frozenset({'bitch'}),frozenset({'fuck'}),0.10756909547738694,0.9332425068119891,1.4913145002205135
-ethnicity,77,frozenset({'bitch'}),"frozenset({'nigger', 'dumb'})",0.10034547738693467,0.8705722070844686,1.4830935833905554
-ethnicity,76,"frozenset({'nigger', 'dumb'})",frozenset({'bitch'}),0.10034547738693467,0.17094703049759227,1.4830935833905552
-ethnicity,83,frozenset({'bitch'}),"frozenset({'nigger', 'fuck'})",0.10034547738693467,0.8705722070844686,1.4716760856686741
-ethnicity,82,"frozenset({'nigger', 'fuck'})",frozenset({'bitch'}),0.10034547738693467,0.16963100610565435,1.4716760856686741
-ethnicity,113,frozenset({'rt'}),"frozenset({'nigger', 'dumb'})",0.10662688442211055,0.8594936708860759,1.4642203574645616
-ethnicity,112,"frozenset({'nigger', 'dumb'})",frozenset({'rt'}),0.10662688442211055,0.18164794007490637,1.4642203574645616
-ethnicity,200,"frozenset({'rt', 'fuck', 'dumb'})",frozenset({'nigger'}),0.10489949748743718,0.963924963924964,1.460798231859631
-ethnicity,209,frozenset({'nigger'}),"frozenset({'rt', 'fuck', 'dumb'})",0.10489949748743718,0.1589719181342218,1.460798231859631
-ethnicity,208,frozenset({'rt'}),"frozenset({'nigger', 'fuck', 'dumb'})",0.10489949748743718,0.8455696202531645,1.4596333265850234
-ethnicity,201,"frozenset({'nigger', 'fuck', 'dumb'})",frozenset({'rt'}),0.10489949748743718,0.18107888316616969,1.4596333265850234
-ethnicity,20,frozenset({'rt'}),frozenset({'dumb'}),0.11102386934673367,0.8949367088607595,1.4586529209176649
-ethnicity,21,frozenset({'dumb'}),frozenset({'rt'}),0.11102386934673367,0.1809572562068083,1.4586529209176649
-ethnicity,88,"frozenset({'fuck', 'dumb'})",frozenset({'nigger'}),0.5793027638190955,0.9609273248241731,1.456255403255672
-ethnicity,89,frozenset({'nigger'}),"frozenset({'fuck', 'dumb'})",0.5793027638190955,0.8779152784388387,1.456255403255672
-ethnicity,114,frozenset({'nigger'}),"frozenset({'rt', 'dumb'})",0.10662688442211055,0.16158971918134218,1.4554502570675913
-ethnicity,111,"frozenset({'rt', 'dumb'})",frozenset({'nigger'}),0.10662688442211055,0.9603960396039604,1.4554502570675913
-ethnicity,126,frozenset({'nigger'}),"frozenset({'rt', 'fuck'})",0.10631281407035176,0.16111375535459305,1.4552799916284376
-ethnicity,123,"frozenset({'rt', 'fuck'})",frozenset({'nigger'}),0.10631281407035176,0.9602836879432624,1.4552799916284376
-ethnicity,100,"frozenset({'fuck', 'dumb'})",frozenset({'rt'}),0.1088253768844221,0.18051575931232092,1.4550941206339996
-ethnicity,101,frozenset({'rt'}),"frozenset({'fuck', 'dumb'})",0.1088253768844221,0.8772151898734176,1.4550941206339993
-ethnicity,17,frozenset({'dumb'}),frozenset({'nigger'}),0.5869974874371859,0.9567443050934221,1.4499161672619971
-ethnicity,16,frozenset({'nigger'}),frozenset({'dumb'}),0.5869974874371859,0.8895763921941932,1.449916167261997
-ethnicity,125,frozenset({'rt'}),"frozenset({'nigger', 'fuck'})",0.10631281407035176,0.8569620253164557,1.448668483465673
-ethnicity,124,"frozenset({'nigger', 'fuck'})",frozenset({'rt'}),0.10631281407035176,0.17971860897265726,1.4486684834656727
-ethnicity,131,"frozenset({'ass', 'fuck', 'dumb'})",frozenset({'nigger'}),0.22738693467336685,0.9495081967213116,1.4389500706143055
-ethnicity,138,frozenset({'nigger'}),"frozenset({'ass', 'fuck', 'dumb'})",0.22738693467336685,0.34459781056639693,1.4389500706143055
-ethnicity,41,frozenset({'nigger'}),"frozenset({'ass', 'dumb'})",0.2292713567839196,0.3474535935268919,1.4367431711553558
-ethnicity,40,"frozenset({'ass', 'dumb'})",frozenset({'nigger'}),0.2292713567839196,0.948051948051948,1.4367431711553558
-ethnicity,53,frozenset({'nigger'}),"frozenset({'ass', 'fuck'})",0.22895728643216082,0.3469776297001428,1.434775029825006
-ethnicity,52,"frozenset({'ass', 'fuck'})",frozenset({'nigger'}),0.22895728643216082,0.9467532467532468,1.434775029825006
-ethnicity,23,frozenset({'fuck'}),frozenset({'nigger'}),0.5915515075376885,0.9452948557089085,1.4325648836635718
-ethnicity,22,frozenset({'nigger'}),frozenset({'fuck'}),0.5915515075376885,0.8964778676820562,1.4325648836635718
-ethnicity,75,"frozenset({'bitch', 'dumb'})",frozenset({'nigger'}),0.10034547738693467,0.9410898379970545,1.4261923104153362
-ethnicity,78,frozenset({'nigger'}),"frozenset({'bitch', 'dumb'})",0.10034547738693467,0.15207044264635886,1.4261923104153362
-ethnicity,27,frozenset({'fuck'}),frozenset({'rt'}),0.11070979899497488,0.17691342534504392,1.4260565729078982
-ethnicity,26,frozenset({'rt'}),frozenset({'fuck'}),0.11070979899497488,0.8924050632911392,1.4260565729078982
-ethnicity,119,frozenset({'nigger'}),"frozenset({'obama', 'fuck'})",0.1260992462311558,0.19109947643979058,1.4232999601971772
-ethnicity,194,frozenset({'nigger'}),"frozenset({'obama', 'fuck', 'dumb'})",0.1260992462311558,0.19109947643979058,1.4232999601971772
-ethnicity,107,frozenset({'nigger'}),"frozenset({'obama', 'dumb'})",0.1260992462311558,0.19109947643979058,1.4232999601971772
-ethnicity,187,"frozenset({'obama', 'fuck', 'dumb'})",frozenset({'nigger'}),0.1260992462311558,0.9391812865497077,1.423299960197177
-ethnicity,106,"frozenset({'obama', 'dumb'})",frozenset({'nigger'}),0.1260992462311558,0.9391812865497077,1.423299960197177
-ethnicity,118,"frozenset({'obama', 'fuck'})",frozenset({'nigger'}),0.1260992462311558,0.9391812865497077,1.423299960197177
-ethnicity,65,frozenset({'nigger'}),"frozenset({'ass', 'obama'})",0.11400753768844221,0.17277486910994763,1.4159978976732903
-ethnicity,64,"frozenset({'ass', 'obama'})",frozenset({'nigger'}),0.11400753768844221,0.9343629343629344,1.4159978976732903
-ethnicity,159,"frozenset({'ass', 'obama', 'dumb'})",frozenset({'nigger'}),0.11385050251256282,0.9342783505154639,1.4158697134894036
-ethnicity,166,frozenset({'nigger'}),"frozenset({'ass', 'obama', 'dumb'})",0.11385050251256282,0.17253688719657306,1.4158697134894036
-ethnicity,173,"frozenset({'ass', 'obama', 'fuck'})",frozenset({'nigger'}),0.11385050251256282,0.9342783505154639,1.4158697134894036
-ethnicity,212,"frozenset({'ass', 'obama', 'fuck', 'dumb'})",frozenset({'nigger'}),0.11385050251256282,0.9342783505154639,1.4158697134894036
-ethnicity,180,frozenset({'nigger'}),"frozenset({'ass', 'obama', 'fuck'})",0.11385050251256282,0.17253688719657306,1.4158697134894036
-ethnicity,241,frozenset({'nigger'}),"frozenset({'ass', 'obama', 'fuck', 'dumb'})",0.11385050251256282,0.17253688719657306,1.4158697134894036
-ethnicity,84,frozenset({'nigger'}),"frozenset({'bitch', 'fuck'})",0.10034547738693467,0.15207044264635886,1.4137001149956396
-ethnicity,81,"frozenset({'bitch', 'fuck'})",frozenset({'nigger'}),0.10034547738693467,0.9328467153284671,1.4137001149956396
-ethnicity,5,frozenset({'ass'}),frozenset({'nigger'}),0.23366834170854273,0.9253731343283582,1.4023741359835755
-ethnicity,4,frozenset({'nigger'}),frozenset({'ass'}),0.23366834170854273,0.3541170871013803,1.4023741359835755
-ethnicity,29,frozenset({'obama'}),frozenset({'nigger'}),0.12672738693467336,0.9201824401368301,1.3945078007594798
-ethnicity,28,frozenset({'nigger'}),frozenset({'obama'}),0.12672738693467336,0.19205140409328889,1.3945078007594796
-ethnicity,31,frozenset({'nigger'}),frozenset({'rt'}),0.11196608040201005,0.16968110423607805,1.3677585718675254
-ethnicity,30,frozenset({'rt'}),frozenset({'nigger'}),0.11196608040201005,0.9025316455696202,1.3677585718675251
-ethnicity,13,frozenset({'nigger'}),frozenset({'bitch'}),0.1039572864321608,0.1575440266539743,1.366812481924398
-ethnicity,12,frozenset({'bitch'}),frozenset({'nigger'}),0.1039572864321608,0.9019073569482289,1.366812481924398
-religion,2,frozenset({'christian'}),frozenset({'woman'}),0.10253204126289465,0.4483937115516063,4.12187207831491
-religion,3,frozenset({'woman'}),frozenset({'christian'}),0.10253204126289465,0.942528735632184,4.12187207831491
-religion,6,frozenset({'islam'}),frozenset({'terror'}),0.1061269146608315,0.4193946880790611,3.3922720787987775
-religion,7,frozenset({'terror'}),frozenset({'islam'}),0.1061269146608315,0.8584070796460176,3.3922720787987775
-religion,0,frozenset({'christian'}),frozenset({'right'}),0.11284776492653954,0.4935064935064935,3.2484100261878037
-religion,1,frozenset({'right'}),frozenset({'christian'}),0.11284776492653954,0.7427983539094649,3.2484100261878037
-religion,4,frozenset({'muslim'}),frozenset({'idiot'}),0.35823694904657705,0.7386400257815018,1.9568608219254857
-religion,5,frozenset({'idiot'}),frozenset({'muslim'}),0.35823694904657705,0.9490683229813663,1.9568608219254857
-gender,40,"frozenset({'make', 'gay'})","frozenset({'rape', 'joke'})",0.12149826880705068,0.9662077596996245,2.1061008936985983
-gender,45,"frozenset({'rape', 'joke'})","frozenset({'make', 'gay'})",0.12149826880705068,0.2648370497427101,2.106100893698598
-gender,44,"frozenset({'gay', 'joke'})","frozenset({'make', 'rape'})",0.12149826880705068,0.2681486627301146,2.0957153788279808
-gender,41,"frozenset({'make', 'rape'})","frozenset({'gay', 'joke'})",0.12149826880705068,0.9495694956949571,2.0957153788279808
-gender,20,"frozenset({'rape', 'joke'})",frozenset({'gay'}),0.4422411079634876,0.9639794168096055,2.036278329258056
-gender,21,frozenset({'gay'}),"frozenset({'rape', 'joke'})",0.4422411079634876,0.9341755319148937,2.036278329258056
-gender,48,frozenset({'rape'}),"frozenset({'make', 'gay', 'joke'})",0.12149826880705068,0.25122030589000977,2.036038040338166
-gender,37,"frozenset({'make', 'gay', 'joke'})",frozenset({'rape'}),0.12149826880705068,0.9846938775510206,2.036038040338166
-gender,47,frozenset({'gay'}),"frozenset({'make', 'rape', 'joke'})",0.12149826880705068,0.2566489361702128,2.035889313889553
-gender,38,"frozenset({'make', 'rape', 'joke'})",frozenset({'gay'}),0.12149826880705068,0.9637952559300874,2.035889313889553
-gender,25,"frozenset({'make', 'rape'})",frozenset({'gay'}),0.12322946175637393,0.96309963099631,2.0344198987202637
-gender,28,frozenset({'gay'}),"frozenset({'make', 'rape'})",0.12322946175637393,0.26030585106382975,2.0344198987202637
-gender,49,frozenset({'joke'}),"frozenset({'make', 'gay', 'rape'})",0.12149826880705068,0.24983818770226537,2.027422534687349
-gender,36,"frozenset({'make', 'gay', 'rape'})",frozenset({'joke'}),0.12149826880705068,0.9859514687100894,2.0274225346873487
-gender,29,frozenset({'rape'}),"frozenset({'make', 'gay'})",0.12322946175637393,0.2547998698340384,2.0262808171783226
-gender,24,"frozenset({'make', 'gay'})",frozenset({'rape'}),0.12322946175637393,0.9799749687108885,2.0262808171783226
-gender,30,"frozenset({'make', 'rape'})",frozenset({'joke'}),0.12606232294617564,0.9852398523985241,2.0259592304660914
-gender,35,frozenset({'joke'}),"frozenset({'make', 'rape'})",0.12606232294617564,0.25922330097087376,2.025959230466091
-gender,19,"frozenset({'gay', 'joke'})",frozenset({'rape'}),0.4422411079634876,0.9760333449114276,2.018130775648295
-gender,22,frozenset({'rape'}),"frozenset({'gay', 'joke'})",0.4422411079634876,0.9144158802473153,2.018130775648295
-gender,17,frozenset({'joke'}),"frozenset({'make', 'gay'})",0.12338684293358514,0.2537216828478964,2.017706599268503
-gender,12,"frozenset({'make', 'gay'})",frozenset({'joke'}),0.12338684293358514,0.9812265331664579,2.017706599268503
-gender,4,frozenset({'gay'}),frozenset({'rape'}),0.45908089392508655,0.9697473404255319,2.0051332902908654
-gender,5,frozenset({'rape'}),frozenset({'gay'}),0.45908089392508655,0.9492352749755938,2.0051332902908654
-gender,42,"frozenset({'make', 'joke'})","frozenset({'gay', 'rape'})",0.12149826880705068,0.919047619047619,2.001929575395465
-gender,43,"frozenset({'gay', 'rape'})","frozenset({'make', 'joke'})",0.12149826880705068,0.2646554679465204,2.0019295753954647
-gender,18,"frozenset({'gay', 'rape'})",frozenset({'joke'}),0.4422411079634876,0.9633184778882414,1.9808820739488304
-gender,23,frozenset({'joke'}),"frozenset({'gay', 'rape'})",0.4422411079634876,0.9093851132686084,1.9808820739488302
-gender,34,frozenset({'rape'}),"frozenset({'make', 'joke'})",0.12606232294617564,0.26065733810608527,1.9716865789596019
-gender,31,"frozenset({'make', 'joke'})",frozenset({'rape'}),0.12606232294617564,0.9535714285714285,1.9716865789596019
-gender,13,"frozenset({'make', 'joke'})",frozenset({'gay'}),0.12338684293358514,0.9333333333333332,1.9715425531914892
-gender,16,frozenset({'gay'}),"frozenset({'make', 'joke'})",0.12338684293358514,0.2606382978723404,1.971542553191489
-gender,1,frozenset({'joke'}),frozenset({'gay'}),0.45310040919106076,0.931715210355987,1.9681244835777731
-gender,0,frozenset({'gay'}),frozenset({'joke'}),0.45310040919106076,0.9571143617021276,1.968124483577773
-gender,8,frozenset({'rape'}),frozenset({'joke'}),0.45876613157066415,0.9485844451675887,1.9505843251116046
-gender,9,frozenset({'joke'}),frozenset({'rape'}),0.45876613157066415,0.9433656957928802,1.9505843251116044
-gender,32,"frozenset({'rape', 'joke'})",frozenset({'make'}),0.12606232294617564,0.27478559176672385,1.788921772628856
-gender,33,frozenset({'make'}),"frozenset({'rape', 'joke'})",0.12606232294617564,0.8206967213114754,1.7889217726288558
-gender,46,frozenset({'make'}),"frozenset({'gay', 'rape', 'joke'})",0.12149826880705068,0.7909836065573771,1.7885800128347238
-gender,39,"frozenset({'gay', 'rape', 'joke'})",frozenset({'make'}),0.12149826880705068,0.27473309608540925,1.7885800128347238
-gender,15,frozenset({'make'}),"frozenset({'gay', 'joke'})",0.12338684293358514,0.8032786885245902,1.77284917918904
-gender,14,"frozenset({'gay', 'joke'})",frozenset({'make'}),0.12338684293358514,0.27231677665856197,1.7728491791890397
-gender,6,frozenset({'make'}),frozenset({'joke'}),0.13220018885741266,0.8606557377049181,1.7697755849116665
-gender,7,frozenset({'joke'}),frozenset({'make'}),0.13220018885741266,0.27184466019417475,1.7697755849116663
-gender,26,"frozenset({'gay', 'rape'})",frozenset({'make'}),0.12322946175637393,0.26842646554679467,1.7475222972175546
-gender,27,frozenset({'make'}),"frozenset({'gay', 'rape'})",0.12322946175637393,0.8022540983606558,1.7475222972175546
-gender,2,frozenset({'make'}),frozenset({'gay'}),0.12574756059175324,0.8186475409836067,1.729284067622951
-gender,3,frozenset({'gay'}),frozenset({'make'}),0.12574756059175324,0.265625,1.7292840676229508
-gender,11,frozenset({'rape'}),frozenset({'make'}),0.1279508970727101,0.26456231695411647,1.722365739678746
-gender,10,frozenset({'make'}),frozenset({'rape'}),0.1279508970727101,0.8329918032786885,1.722365739678746
-age,160,"frozenset({'like', 'high'})","frozenset({'girl', 'school', 'bulli'})",0.10198654778664164,0.7528868360277137,1.595890431938055
-age,155,"frozenset({'girl', 'school', 'bulli'})","frozenset({'like', 'high'})",0.10198654778664164,0.21618037135278514,1.5958904319380547
-age,162,"frozenset({'girl', 'school'})","frozenset({'like', 'bulli', 'high'})",0.10198654778664164,0.21518151815181516,1.5940387549763086
-age,153,"frozenset({'like', 'bulli', 'high'})","frozenset({'girl', 'school'})",0.10198654778664164,0.7555040556199305,1.5940387549763086
-age,137,"frozenset({'like', 'high'})","frozenset({'girl', 'school'})",0.1022993899577663,0.7551963048498845,1.593389431321885
-age,138,"frozenset({'girl', 'school'})","frozenset({'like', 'high'})",0.1022993899577663,0.2158415841584158,1.5933894313218848
-age,84,"frozenset({'girl', 'bulli'})","frozenset({'like', 'high'})",0.10949475989363366,0.21387106630003058,1.5788426407114267
-age,89,"frozenset({'like', 'high'})","frozenset({'girl', 'bulli'})",0.10949475989363366,0.8083140877598153,1.5788426407114267
-age,82,"frozenset({'like', 'high', 'bulli'})",frozenset({'girl'}),0.10949475989363366,0.8111239860950175,1.5766237893297192
-age,91,frozenset({'girl'}),"frozenset({'like', 'high', 'bulli'})",0.10949475989363366,0.2128306476132563,1.576623789329719
-age,61,"frozenset({'like', 'high'})",frozenset({'girl'}),0.10980760206475833,0.8106235565819861,1.5756510785128115
-age,64,frozenset({'girl'}),"frozenset({'like', 'high'})",0.10980760206475833,0.2134387351778656,1.5756510785128115
-age,99,"frozenset({'high', 'bulli'})","frozenset({'girl', 'school'})",0.4411074612857813,0.7430830039525691,1.567831565765272
-age,100,"frozenset({'girl', 'school'})","frozenset({'high', 'bulli'})",0.4411074612857813,0.9306930693069306,1.567831565765272
-age,105,frozenset({'high'}),"frozenset({'girl', 'school', 'bulli'})",0.4411074612857813,0.7386066003143007,1.5656206882656911
-age,94,"frozenset({'girl', 'school', 'bulli'})",frozenset({'high'}),0.4411074612857813,0.9350132625994695,1.565620688265691
-age,69,frozenset({'high'}),"frozenset({'girl', 'school'})",0.44251525105584233,0.7409638554216867,1.5633603721817964
-age,66,"frozenset({'girl', 'school'})",frozenset({'high'}),0.44251525105584233,0.9336633663366336,1.5633603721817964
-age,164,"frozenset({'girl', 'bulli'})","frozenset({'like', 'school', 'high'})",0.10198654778664164,0.19920562175374276,1.562603116406966
-age,151,"frozenset({'like', 'school', 'high'})","frozenset({'girl', 'bulli'})",0.10198654778664164,0.7999999999999999,1.562603116406966
-age,28,frozenset({'girl'}),"frozenset({'high', 'bulli'})",0.4770843109651181,0.9273335360291882,1.5621721464649803
-age,25,"frozenset({'high', 'bulli'})",frozenset({'girl'}),0.4770843109651181,0.8036890645586298,1.5621721464649803
-age,146,"frozenset({'like', 'bulli', 'school', 'high'})",frozenset({'girl'}),0.10198654778664164,0.8029556650246304,1.5607465997271093
-age,169,frozenset({'girl'}),"frozenset({'like', 'bulli', 'school', 'high'})",0.10198654778664164,0.198236546062633,1.5607465997271093
-age,29,frozenset({'high'}),"frozenset({'girl', 'bulli'})",0.4770843109651181,0.7988475641697224,1.5603521166321526
-age,24,"frozenset({'girl', 'bulli'})",frozenset({'high'}),0.4770843109651181,0.9318667888787047,1.5603521166321526
-age,133,"frozenset({'like', 'school', 'high'})",frozenset({'girl'}),0.1022993899577663,0.8024539877300613,1.5597714635324662
-age,142,frozenset({'girl'}),"frozenset({'like', 'school', 'high'})",0.1022993899577663,0.1988446336272423,1.5597714635324662
-age,13,frozenset({'high'}),frozenset({'girl'}),0.4786485218207414,0.8014667365112623,1.5578524920998784
-age,12,frozenset({'girl'}),frozenset({'high'}),0.4786485218207414,0.9303739738522346,1.5578524920998784
-age,87,"frozenset({'like', 'girl'})","frozenset({'high', 'bulli'})",0.10949475989363366,0.922266139657444,1.5536356866482317
-age,86,"frozenset({'high', 'bulli'})","frozenset({'like', 'girl'})",0.10949475989363366,0.1844532279314888,1.5536356866482317
-age,167,"frozenset({'bulli', 'high'})","frozenset({'like', 'girl', 'school'})",0.10198654778664164,0.17180500658761527,1.551340970500882
-age,148,"frozenset({'like', 'girl', 'school'})","frozenset({'bulli', 'high'})",0.10198654778664164,0.9209039548022598,1.5513409705008818
-age,80,"frozenset({'like', 'girl', 'bulli'})",frozenset({'high'}),0.10949475989363366,0.9259259259259259,1.5504045166171934
-age,93,frozenset({'high'}),"frozenset({'like', 'girl', 'bulli'})",0.10949475989363366,0.18334206390780514,1.5504045166171934
-age,60,"frozenset({'like', 'girl'})",frozenset({'high'}),0.10980760206475833,0.924901185770751,1.5486886539110558
-age,65,frozenset({'high'}),"frozenset({'like', 'girl'})",0.10980760206475833,0.18386589837611314,1.5486886539110556
-age,170,frozenset({'high'}),"frozenset({'like', 'girl', 'school', 'bulli'})",0.10198654778664164,0.17077003666841278,1.548557226129309
-age,145,"frozenset({'like', 'girl', 'school', 'bulli'})",frozenset({'high'}),0.10198654778664164,0.924822695035461,1.548557226129309
-age,143,frozenset({'high'}),"frozenset({'like', 'girl', 'school'})",0.1022993899577663,0.1712938711367208,1.5467255906455593
-age,132,"frozenset({'like', 'girl', 'school'})",frozenset({'high'}),0.1022993899577663,0.923728813559322,1.5467255906455593
-age,158,"frozenset({'like', 'girl'})","frozenset({'bulli', 'school', 'high'})",0.10198654778664164,0.8590250329380763,1.544795228009317
-age,157,"frozenset({'bulli', 'school', 'high'})","frozenset({'like', 'girl'})",0.10198654778664164,0.18340365682137832,1.544795228009317
-age,95,"frozenset({'high', 'school', 'bulli'})",frozenset({'girl'}),0.4411074612857813,0.7932489451476793,1.5418791445208615
-age,104,frozenset({'girl'}),"frozenset({'high', 'school', 'bulli'})",0.4411074612857813,0.8574034660991182,1.5418791445208615
-age,165,"frozenset({'school', 'high'})","frozenset({'like', 'girl', 'bulli'})",0.10198654778664164,0.18232662192393737,1.5418175846028195
-age,150,"frozenset({'like', 'girl', 'bulli'})","frozenset({'school', 'high'})",0.10198654778664164,0.8624338624338623,1.5418175846028193
-age,140,"frozenset({'school', 'high'})","frozenset({'like', 'girl'})",0.1022993899577663,0.18288590604026844,1.540434252062498
-age,135,"frozenset({'like', 'girl'})","frozenset({'school', 'high'})",0.1022993899577663,0.8616600790513833,1.540434252062498
-age,97,"frozenset({'girl', 'bulli'})","frozenset({'school', 'high'})",0.4411074612857813,0.8615948670944089,1.540317669277001
-age,102,"frozenset({'school', 'high'})","frozenset({'girl', 'bulli'})",0.4411074612857813,0.7885906040268457,1.540317669277001
-age,68,frozenset({'girl'}),"frozenset({'school', 'high'})",0.44251525105584233,0.8601398601398601,1.5377164781527197
-age,67,"frozenset({'school', 'high'})",frozenset({'girl'}),0.44251525105584233,0.7911073825503355,1.5377164781527195
-age,112,"frozenset({'girl', 'school'})","frozenset({'like', 'bulli'})",0.11027686532144533,0.23267326732673266,1.0724442667770742
-age,111,"frozenset({'like', 'bulli'})","frozenset({'girl', 'school'})",0.11027686532144533,0.5082912761355444,1.0724442667770742
-age,154,"frozenset({'girl', 'school', 'high'})","frozenset({'like', 'bulli'})",0.10198654778664164,0.2304701307882644,1.0622895069425913
-age,161,"frozenset({'like', 'bulli'})","frozenset({'girl', 'school', 'high'})",0.10198654778664164,0.4700793078586878,1.0622895069425913
-age,108,"frozenset({'girl', 'school', 'bulli'})",frozenset({'like'}),0.11027686532144533,0.23375331564986737,1.0598474801061009
-age,115,frozenset({'like'}),"frozenset({'girl', 'school', 'bulli'})",0.11027686532144533,0.5,1.0598474801061009
-age,34,frozenset({'girl'}),"frozenset({'like', 'bulli'})",0.11825434068512436,0.2298570994223168,1.0594639052681118
-age,31,"frozenset({'like', 'bulli'})",frozenset({'girl'}),0.11825434068512436,0.5450612833453496,1.0594639052681118
-age,71,"frozenset({'girl', 'school'})",frozenset({'like'}),0.11074612857813233,0.23366336633663365,1.0594396460922688
-age,72,frozenset({'like'}),"frozenset({'girl', 'school'})",0.11074612857813233,0.5021276595744681,1.0594396460922688
-age,88,"frozenset({'girl', 'high'})","frozenset({'like', 'bulli'})",0.10949475989363366,0.22875816993464054,1.0543986880981664
-age,85,"frozenset({'like', 'bulli'})","frozenset({'girl', 'high'})",0.10949475989363366,0.5046863734679163,1.0543986880981664
-age,168,frozenset({'like'}),"frozenset({'bulli', 'girl', 'school', 'high'})",0.10198654778664164,0.4624113475177305,1.048296363362004
-age,147,"frozenset({'bulli', 'girl', 'school', 'high'})",frozenset({'like'}),0.10198654778664164,0.23120567375886525,1.048296363362004
-age,141,frozenset({'like'}),"frozenset({'girl', 'school', 'high'})",0.1022993899577663,0.46382978723404256,1.0481667832404504
-age,134,"frozenset({'girl', 'school', 'high'})",frozenset({'like'}),0.1022993899577663,0.23117709437963943,1.0481667832404502
-age,32,"frozenset({'girl', 'bulli'})",frozenset({'like'}),0.11825434068512436,0.23098075160403303,1.047276556740839
-age,33,frozenset({'like'}),"frozenset({'girl', 'bulli'})",0.11825434068512436,0.5361702127659574,1.047276556740839
-age,126,"frozenset({'school', 'high'})","frozenset({'like', 'bulli'})",0.12701392147661505,0.22706935123042507,1.0466145367095223
-age,123,"frozenset({'like', 'bulli'})","frozenset({'school', 'high'})",0.12701392147661505,0.585436193222783,1.046614536709522
-age,14,frozenset({'like'}),frozenset({'girl'}),0.11872360394181136,0.5382978723404256,1.046317512274959
-age,15,frozenset({'girl'}),frozenset({'like'}),0.11872360394181136,0.23076923076923078,1.046317512274959
-age,38,"frozenset({'like', 'bulli'})",frozenset({'high'}),0.13499139684029407,0.6222062004325883,1.0418450076913404
-age,43,frozenset({'high'}),"frozenset({'like', 'bulli'})",0.13499139684029407,0.22603457307490832,1.0418450076913401
-age,92,frozenset({'like'}),"frozenset({'high', 'girl', 'bulli'})",0.10949475989363366,0.49645390070921985,1.0405999302406697
-age,81,"frozenset({'high', 'girl', 'bulli'})",frozenset({'like'}),0.10949475989363366,0.22950819672131148,1.0405999302406697
-age,62,"frozenset({'girl', 'high'})",frozenset({'like'}),0.10980760206475833,0.22941176470588237,1.040162703379224
-age,63,frozenset({'like'}),"frozenset({'girl', 'high'})",0.10980760206475833,0.4978723404255319,1.040162703379224
-age,119,"frozenset({'high', 'school', 'bulli'})",frozenset({'like'}),0.12701392147661505,0.22841068917018284,1.0356237843014036
-age,130,frozenset({'like'}),"frozenset({'high', 'school', 'bulli'})",0.12701392147661505,0.5758865248226951,1.0356237843014036
-age,116,frozenset({'girl'}),"frozenset({'like', 'school', 'bulli'})",0.11027686532144533,0.21435086652477955,1.0350038441789393
-age,107,"frozenset({'like', 'school', 'bulli'})",frozenset({'girl'}),0.11027686532144533,0.532477341389728,1.0350038441789393
-age,77,frozenset({'like'}),"frozenset({'school', 'high'})",0.12748318473330206,0.5780141843971631,1.0333458279784855
-age,76,"frozenset({'school', 'high'})",frozenset({'like'}),0.12748318473330206,0.22790827740492173,1.0333458279784855
-age,42,frozenset({'like'}),"frozenset({'high', 'bulli'})",0.13499139684029407,0.6120567375886525,1.0310615871947972
-age,39,"frozenset({'high', 'bulli'})",frozenset({'like'}),0.13499139684029407,0.2274044795783926,1.031061587194797
-age,163,"frozenset({'girl', 'high'})","frozenset({'like', 'school', 'bulli'})",0.10198654778664164,0.21307189542483662,1.0288282684675079
-age,152,"frozenset({'like', 'school', 'bulli'})","frozenset({'girl', 'high'})",0.10198654778664164,0.4924471299093655,1.0288282684675079
-age,17,frozenset({'high'}),frozenset({'like'}),0.13546066009698107,0.22682032477737035,1.0284130044693112
-age,16,frozenset({'like'}),frozenset({'high'}),0.13546066009698107,0.6141843971631206,1.0284130044693112
-age,131,frozenset({'high'}),"frozenset({'like', 'school', 'bulli'})",0.12701392147661505,0.21267679413305396,1.0269205021847536
-age,118,"frozenset({'like', 'school', 'bulli'})",frozenset({'high'}),0.12701392147661505,0.6132930513595166,1.0269205021847536
-age,113,"frozenset({'girl', 'bulli'})","frozenset({'like', 'school'})",0.11027686532144533,0.21539871677360223,1.0268784461846674
-age,110,"frozenset({'like', 'school'})","frozenset({'girl', 'bulli'})",0.11027686532144533,0.5257270693512304,1.0268784461846674
-age,70,"frozenset({'like', 'school'})",frozenset({'girl'}),0.11074612857813233,0.5279642058165548,1.0262314283323912
-age,73,frozenset({'girl'}),"frozenset({'like', 'school'})",0.11074612857813233,0.2152629978716935,1.0262314283323912
-age,83,"frozenset({'like', 'girl', 'high'})",frozenset({'bulli'}),0.10949475989363366,0.9971509971509972,1.0257097867717337
-age,90,frozenset({'bulli'}),"frozenset({'like', 'girl', 'high'})",0.10949475989363366,0.11263073209975866,1.0257097867717337
-age,144,"frozenset({'like', 'girl', 'school', 'high'})",frozenset({'bulli'}),0.10198654778664164,0.9969418960244649,1.0254946969081906
-age,171,frozenset({'bulli'}),"frozenset({'like', 'girl', 'school', 'high'})",0.10198654778664164,0.10490748189863235,1.0254946969081906
-age,103,frozenset({'bulli'}),"frozenset({'girl', 'school', 'high'})",0.4411074612857813,0.4537409493161706,1.0253679353051532
-age,96,"frozenset({'girl', 'school', 'high'})",frozenset({'bulli'}),0.4411074612857813,0.9968186638388123,1.0253679353051532
-age,27,frozenset({'bulli'}),"frozenset({'girl', 'high'})",0.4770843109651181,0.49074818986323415,1.0252788162730901
-age,26,"frozenset({'girl', 'high'})",frozenset({'bulli'}),0.4770843109651181,0.996732026143791,1.0252788162730901
-age,40,"frozenset({'like', 'high'})",frozenset({'bulli'}),0.13499139684029407,0.9965357967667436,1.0250769668109079
-age,41,frozenset({'bulli'}),"frozenset({'like', 'high'})",0.13499139684029407,0.13885760257441673,1.0250769668109079
-age,121,"frozenset({'like', 'school', 'high'})",frozenset({'bulli'}),0.12701392147661505,0.996319018404908,1.0248539798330776
-age,128,frozenset({'bulli'}),"frozenset({'like', 'school', 'high'})",0.12701392147661505,0.13065164923572004,1.0248539798330774
-age,35,frozenset({'bulli'}),"frozenset({'like', 'girl'})",0.11825434068512436,0.12164119066773935,1.024574613885188
-age,30,"frozenset({'like', 'girl'})",frozenset({'bulli'}),0.11825434068512436,0.9960474308300395,1.024574613885188
-age,106,"frozenset({'like', 'girl', 'school'})",frozenset({'bulli'}),0.11027686532144533,0.9957627118644068,1.0242817404584317
-age,117,frozenset({'bulli'}),"frozenset({'like', 'girl', 'school'})",0.11027686532144533,0.11343523732904265,1.0242817404584317
-age,37,frozenset({'bulli'}),"frozenset({'girl', 'school'})",0.4717659940559987,0.48527755430410296,1.023887592299053
-age,36,"frozenset({'girl', 'school'})",frozenset({'bulli'}),0.4717659940559987,0.9953795379537953,1.023887592299053
-age,2,frozenset({'girl'}),frozenset({'bulli'}),0.5119662130455185,0.9951352994831254,1.0236363587442672
-age,3,frozenset({'bulli'}),frozenset({'girl'}),0.5119662130455185,0.5266291230893,1.0236363587442672
-age,45,"frozenset({'school', 'high'})",frozenset({'bulli'}),0.5560769591740967,0.9941275167785236,1.0225997127538378
-age,46,frozenset({'bulli'}),"frozenset({'school', 'high'})",0.5560769591740967,0.5720032180209172,1.0225997127538378
-age,4,frozenset({'bulli'}),frozenset({'high'}),0.5936180197090568,0.6106194690265487,1.0224437573302059
-age,5,frozenset({'high'}),frozenset({'bulli'}),0.5936180197090568,0.9939759036144579,1.0224437573302059
-age,54,"frozenset({'school', 'bulli'})",frozenset({'one'}),0.10902549663694666,0.11855757781935704,1.0214805862522232
-age,59,frozenset({'one'}),"frozenset({'school', 'bulli'})",0.10902549663694666,0.9393530997304582,1.0214805862522232
-age,22,"frozenset({'get', 'school'})",frozenset({'bulli'}),0.10808697012357266,0.992816091954023,1.0212507282159404
-age,23,frozenset({'bulli'}),"frozenset({'get', 'school'})",0.10808697012357266,0.11118262268704747,1.0212507282159404
-age,50,"frozenset({'school', 'bulli'})",frozenset({'like'}),0.20710151728452997,0.22520836877019904,1.0211043273389238
-age,51,frozenset({'like'}),"frozenset({'school', 'bulli'})",0.20710151728452997,0.9390070921985816,1.0211043273389238
-age,124,"frozenset({'high', 'bulli'})","frozenset({'like', 'school'})",0.12701392147661505,0.213965744400527,1.0200469828132508
-age,125,"frozenset({'like', 'school'})","frozenset({'high', 'bulli'})",0.12701392147661505,0.6055182699478002,1.0200469828132508
-age,122,"frozenset({'school', 'bulli'})","frozenset({'like', 'high'})",0.12701392147661505,0.13811872767477465,1.0196224318993468
-age,127,"frozenset({'like', 'high'})","frozenset({'school', 'bulli'})",0.12701392147661505,0.9376443418013858,1.0196224318993468
-age,156,"frozenset({'bulli', 'girl', 'high'})","frozenset({'like', 'school'})",0.10198654778664164,0.21377049180327867,1.0191161477243553
-age,159,"frozenset({'like', 'school'})","frozenset({'bulli', 'girl', 'high'})",0.10198654778664164,0.4862043251304996,1.0191161477243553
-age,136,"frozenset({'like', 'school'})","frozenset({'girl', 'high'})",0.1022993899577663,0.48769574944071586,1.0189016098609467
-age,139,"frozenset({'girl', 'high'})","frozenset({'like', 'school'})",0.1022993899577663,0.21372549019607842,1.0189016098609465
-age,52,frozenset({'school'}),"frozenset({'like', 'bulli'})",0.20710151728452997,0.22092441181378275,1.0182911065072193
-age,49,"frozenset({'like', 'bulli'})",frozenset({'school'}),0.20710151728452997,0.9545782263878876,1.0182911065072193
-age,79,frozenset({'high'}),"frozenset({'like', 'school'})",0.12748318473330206,0.213462545835516,1.0176480652695405
-age,74,"frozenset({'like', 'school'})",frozenset({'high'}),0.12748318473330206,0.6077554064131245,1.0176480652695403
-age,56,"frozenset({'school', 'one'})",frozenset({'bulli'}),0.10902549663694666,0.9886524822695035,1.0169678711422263
-age,57,frozenset({'bulli'}),"frozenset({'school', 'one'})",0.10902549663694666,0.11214802896218826,1.0169678711422263
-age,0,frozenset({'get'}),frozenset({'bulli'}),0.11809791959956202,0.9882198952879581,1.0165228947024805
-age,1,frozenset({'bulli'}),frozenset({'get'}),0.11809791959956202,0.12148028962188255,1.0165228947024805
-age,55,"frozenset({'one', 'bulli'})",frozenset({'school'}),0.10902549663694666,0.9521857923497268,1.0157389905709666
-age,58,frozenset({'school'}),"frozenset({'one', 'bulli'})",0.10902549663694666,0.11630235274486901,1.0157389905709666
-age,48,"frozenset({'like', 'school'})",frozenset({'bulli'}),0.20710151728452997,0.9873228933631619,1.0156002022961697
-age,53,frozenset({'bulli'}),"frozenset({'like', 'school'})",0.20710151728452997,0.21303298471440066,1.0156002022961697
-age,8,frozenset({'bulli'}),frozenset({'one'}),0.11450023463162834,0.11777956556717618,1.0147773081818832
-age,9,frozenset({'one'}),frozenset({'bulli'}),0.11450023463162834,0.9865229110512128,1.0147773081818832
-age,18,frozenset({'like'}),frozenset({'school'}),0.20976067573908963,0.951063829787234,1.0145421431386263
-age,19,frozenset({'school'}),frozenset({'like'}),0.20976067573908963,0.2237610545636576,1.0145421431386263
-age,21,frozenset({'one'}),frozenset({'school'}),0.11027686532144533,0.9501347708894878,1.013551074636492
-age,20,frozenset({'school'}),frozenset({'one'}),0.11027686532144533,0.11763724345069247,1.0135510746364917
-age,44,"frozenset({'school', 'bulli'})",frozenset({'high'}),0.5560769591740967,0.6046946759653004,1.0125230653342496
-age,47,frozenset({'high'}),"frozenset({'school', 'bulli'})",0.5560769591740967,0.9311157674174961,1.0125230653342496
-age,7,frozenset({'bulli'}),frozenset({'like'}),0.216956045674957,0.22316975060337893,1.0118611458208522
-age,6,frozenset({'like'}),frozenset({'bulli'}),0.216956045674957,0.9836879432624114,1.0118611458208522
-age,114,"frozenset({'school', 'bulli'})","frozenset({'like', 'girl'})",0.11027686532144533,0.11991835346147305,1.0100632854798381
-age,109,"frozenset({'like', 'girl'})","frozenset({'school', 'bulli'})",0.11027686532144533,0.9288537549407114,1.0100632854798381
-age,166,"frozenset({'school', 'bulli'})","frozenset({'like', 'girl', 'high'})",0.10198654778664164,0.11090321483245451,1.009977567555387
-age,149,"frozenset({'like', 'girl', 'high'})","frozenset({'school', 'bulli'})",0.10198654778664164,0.9287749287749287,1.0099775675553868
-age,11,frozenset({'bulli'}),frozenset({'school'}),0.9195995620209604,0.9459372485921158,1.0090733906640075
-age,10,frozenset({'school'}),frozenset({'bulli'}),0.9195995620209604,0.9809778074420157,1.0090733906640075
-age,75,"frozenset({'like', 'high'})",frozenset({'school'}),0.12748318473330206,0.9411085450346421,1.0039223975315312
-age,78,frozenset({'school'}),"frozenset({'like', 'high'})",0.12748318473330206,0.13599199065576506,1.0039223975315312
-age,120,"frozenset({'like', 'high', 'bulli'})",frozenset({'school'}),0.12701392147661505,0.9409038238702202,1.0037040123481258
-age,129,frozenset({'school'}),"frozenset({'like', 'high', 'bulli'})",0.12701392147661505,0.13549140664108128,1.0037040123481258
-age,101,"frozenset({'girl', 'high'})","frozenset({'school', 'bulli'})",0.4411074612857813,0.9215686274509804,1.0021412204956825
-age,98,"frozenset({'school', 'bulli'})","frozenset({'girl', 'high'})",0.4411074612857813,0.4796734138458922,1.0021412204956825
+Classe,regola
+age,bulli old year
+age,bulli girl high like look school
+age,act bulli like school
+age,bulli dont know school
+age,back go
+age,bulli didnt girl high like
+age,bulli dont girl high like
+age,bulli girl high like mean
+age,bulli girl high like school would
+age,bulli day one school
+age,bulli girl got high one school
+age,bulli girl high like peopl school
+age,bulli one school time
+age,bulli feel like school
+age,bulli get school tri
+age,bulli friend got school
+age,bulli girl high pretti school
+age,bulli get girl high one
+age,bulli go im school
+age,bulli girl like mean school
+age,bulli girl high im like school
+age,bulli girl high school told
+age,bulli girl grade high school
+age,bulli girl hair high school
+age,bulli girl high school white
+age,bulli girl high like year
+age,bulli girl high school wear
+age,bulli girl high middl school
+age,bulli got school year
+age,bulli girl high school start
+age,bc bulli girl high school
+age,bulli everi girl high school
+age,bulli fat girl high
+age,bulli class girl high school
+age,bulli girl high school went
+age,bulli girl high rememb school
+age,bulli girl got high like school
+age,bulli girl group high school
+age,black bulli girl high school
+age,bulli girl happen high school
+age,bulli girl high kind school
+age,bulli girl high school tell
+age,bad bulli girl high school
+age,bulli girl high school thought
+age,bulli girl high mean school
+age,bulli friend girl high like
+age,bulli get girl high like school
+age,bulli girl high ugli
+age,bulli girl high post school
+age,bulli girl high love school
+age,amp bulli girl high school
+age,bitch bulli girl high school
+age,bulli girl high school wasnt
+age,boy bulli girl high school
+age,bulli girl high mom school
+age,bulli girl high two
+age,bulli girl high school thing
+age,bulli girl high school still
+age,bulli girl high liter school
+age,bulli like school shit
+age,bulli girl high realli school
+age,ask bulli girl high school
+age,dont kid
+age,bulli didnt girl high school
+age,bulli girl high school year
+age,bulli girl high lol school
+age,bulli girl high lmao
+age,bulli dont peopl school
+age,bulli didnt high like school
+age,bulli girl high ive school
+age,bulli girl high made school
+age,bulli friend girl high school
+age,bulli ever girl high school
+age,alway bulli girl high school
+age,bulli dont get school
+age,bulli girl high school talk
+age,bulli gay girl high
+age,bulli girl hate high school
+age,bulli girl high school shes
+age,bulli girl high life school
+age,bulli girl high much school
+age,bulli girl high like one school
+age,bulli girl high make school
+age,bulli everyon girl high school
+age,also bulli girl high school
+age,bulli girl high lot school
+age,bulli day girl high school
+age,bulli girl high said school
+age,bulli girl high never school
+age,bulli girl high school stop
+age,bulli girl high school shit
+age,bulli girl guy high school
+age,bulli girl go high school
+age,bulli girl high school see
+age,bulli call girl high school
+age,bulli fuck high like
+age,bulli even girl high school
+age,bulli girl high take
+age,bulli girl high know school
+age,bulli girl high school think
+age,back bulli girl high school
+age,bulli girl high say school
+age,bulli girl high school time
+age,date high school
+age,bulli feel girl high school
+age,bulli come girl high
+age,bulli girl high school someon
+age,bulli fat girl school
+age,bulli fuck girl high school
+age,bulli girl high name
+age,bulli date high
+age,bulli girl high school tri
+age,bulli girl high school want
+age,bulli girl high school yall
+age,bulli get kid school
+age,bulli girl high need
+age,bulli girl high your
+age,bulli girl high that
+age,bulli girl good high school
+age,bulli girl high school way
+age,bulli friend one school
+age,bulli dont girl high school
+age,bulli girl high kid school
+age,bulli cant girl high school
+age,bulli one school year
+age,bulli dont high like school
+age,bulli girl school ugli
+age,bulli like made school
+age,bulli get got high
+age,bulli everi like school
+age,bulli get high im
+age,bulli got middl school
+age,bulli kid one school
+age,bulli girl lmao school
+age,bulli guy like school
+age,bulli girl high school use
+age,bulli everyon like
+age,bulli like realli school
+age,bulli fat high school
+age,bulli friend high like school
+age,bulli girl stori
+age,get go school
+age,alway bulli like
+age,bulli one school would
+age,bulli gay girl school
+age,bulli one peopl school
+age,bulli get go
+age,bulli like thing
+age,bulli girl like middl school
+age,bulli high like school year
+age,bulli fuck like school
+age,bulli get high one school
+age,bulli gay high school
+age,bulli high saw
+age,bulli high school ugli
+age,bulli like school think
+age,bulli like never school
+age,bulli high lmao school
+age,bulli like school see
+age,bulli high school two
+age,bulli high probabl school
+age,bulli im peopl school
+age,bulli like make school
+age,back bulli like school
+age,best bulli girl
+age,bulli like school time
+age,bulli like school want
+age,bulli get got school
+age,best bulli high
+age,bulli know like school
+age,bulli get peopl school
+age,bulli kid like school
+age,bulli fun high
+age,bulli get im school
+age,bulli like school tri
+age,better bulli high school
+age,bulli fight school
+age,bulli girl watch
+age,bulli other school
+age,bulli id school
+age,bulli doesnt school
+age,bulli like school use
+age,bulli public school
+age,bulli hell school
+age,bulli real school
+age,bulli point school
+age,bulli school seem
+age,bulli high play
+age,bulli last school
+age,bulli school sinc
+age,bulli lie school
+age,bulli school wanna
+age,bulli end high school
+age,bulli school twitter
+age,bulli like say school
+age,bulli school yeah
+age,bulli gonna school
+age,beat bulli school
+age,bulli isnt school
+age,becom bulli high
+age,becom bulli school
+age,bulli school theyr
+age,bulli reason school
+age,bulli school sound
+age,bulli children school
+age,bulli pick school
+age,bulli school sure
+age,bulli help school
+age,big high
+age,actual bulli high school
+age,bulli cool school
+age,bulli differ school
+age,bulli school turn
+age,bulli high school your
+age,bulli money
+age,bulli high school work
+age,bulli high school take
+age,bulli high school show
+age,bulli high right school
+age,bulli sad
+age,attack bulli
+age,act bulli high school
+age,bulli school social
+age,bulli put school
+age,bulli play school
+age,bulli fun school
+age,bulli school stori
+age,bulli funni school
+age,bulli face school
+age,act bulli girl
+age,bulli girl parent
+age,bulli girl person
+age,bulli school sorri
+age,bulli girl let
+age,bulli girl live
+age,bulli head school
+age,bulli high teacher
+age,bulli left school
+age,bulli come high school
+age,bulli high mani
+age,bulli nice school
+age,bulli first high school
+age,bulli girl school show
+age,bulli girl school take
+age,bulli chang school
+age,bulli girl name school
+age,bulli girl need school
+age,anyon bulli school
+age,bulli high live school
+age,bulli high need school
+age,bulli high old school
+age,actual bulli girl
+age,bulli high person school
+age,bulli high let school
+age,bulli girl school your
+age,bulli could high
+age,bulli caus school
+age,bulli mental school
+age,bulli go like school
+age,bulli school someth
+age,away bulli school
+age,bulli hope school
+age,bulli run school
+age,bulli school whole
+age,bulli school trump
+age,bulli date school
+age,bulli could school
+age,bulli hard school
+age,bulli mani school
+age,famili school
+age,bulli noth school
+age,big bulli school
+age,bulli man school
+age,bulli home school
+age,bulli hes school
+age,bulli keep school
+age,bulli school yes
+age,bulli oh school
+age,bulli care school
+age,bulli follow school
+age,bulli high school that
+age,believ bulli school
+age,bulli kill school
+age,ass bulli school
+age,bulli school teacher
+age,bulli high name school
+age,bulli enough
+age,bulli girl old
+age,bulli fact
+age,bulli girl school that
+age,bulli first girl
+age,bulli women
+age,bulli famili
+age,bulli high watch
+age,bulli high well
+age,bulli school video
+age,bulli im one school
+age,bulli world
+age,abus bulli school
+age,bulli there
+age,bulli high parent school
+age,bulli girl work
+age,bulli school thank
+age,bulli school watch
+age,bulli littl school
+age,anyth bulli school
+age,bulli school stand
+age,bulli school us
+age,best bulli school
+age,bulli find school
+age,bulli ill school
+age,around bulli school
+age,bulli call like
+age,bulli school well
+age,bulli school today
+age,bulli tweet
+age,bulli support
+age,bulli high littl
+age,bulli child
+age,bulli school wrong
+age,bulli saw school
+age,bulli new school
+age,school support
+age,bulli learn school
+age,anoth bulli
+age,bulli give school
+age,high us
+ethnicity,anyth black past white
+ethnicity,black call negro peopl white
+ethnicity,color racism ur
+ethnicity,anyth black like past
+ethnicity,anyth black past peopl
+ethnicity,first love one ur
+ethnicity,anyth black dont past
+ethnicity,anyth black past say
+ethnicity,first like one ur
+ethnicity,color racism racist
+ethnicity,anyth im past
+ethnicity,call man negro white
+ethnicity,color racism white
+ethnicity,use word
+ethnicity,black call disgust nigger
+ethnicity,black disgust nigger say
+ethnicity,color peopl racism
+ethnicity,black disgust nigger peopl
+ethnicity,black disgust nigger white
+ethnicity,black color racism
+ethnicity,ass dumb fuck mad nigger obama rt
+ethnicity,call negro racist
+ethnicity,ass bitch dumb fuck nigger obama rt
+ethnicity,anyth live
+ethnicity,black fuck nigger peopl
+ethnicity,black color white
+ethnicity,call like white
+ethnicity,call say white
+ethnicity,call racist white
+ethnicity,hous white
+ethnicity,black racism white
+ethnicity,dont know
+ethnicity,black peopl say
+ethnicity,dumb fuck like nigger shit
+ethnicity,black racist white
+ethnicity,black peopl racist
+ethnicity,black call nigger peopl
+ethnicity,black like peopl
+ethnicity,black one white
+ethnicity,like look
+ethnicity,ass dumb fuck hoe nigger
+ethnicity,peopl word
+ethnicity,black dont peopl
+ethnicity,nigger peopl say
+ethnicity,black dont white
+ethnicity,ass dumb fuck nigger yo
+ethnicity,name white
+ethnicity,peopl us
+ethnicity,call person
+ethnicity,black call racist
+ethnicity,black call say
+ethnicity,ass dumb fuck nigger ugli
+ethnicity,black say white
+ethnicity,black person
+ethnicity,call word
+ethnicity,lol rt
+ethnicity,black live
+ethnicity,call use
+ethnicity,person white
+ethnicity,black word
+ethnicity,call us
+ethnicity,bitch stupid
+ethnicity,bitch dumb fuck get nigger
+ethnicity,nigger peopl white
+ethnicity,black like white
+ethnicity,black use
+ethnicity,bitch dumb fuck like nigger
+ethnicity,use white
+ethnicity,peopl think
+ethnicity,go im
+ethnicity,black mean
+ethnicity,white word
+ethnicity,black year
+ethnicity,anyth racist
+ethnicity,black ppl
+ethnicity,black thing
+ethnicity,ass dumb fuck nigga nigger
+ethnicity,black never
+ethnicity,nigger say white
+ethnicity,ass dumb fuck ignor nigger
+ethnicity,ass dumb fuck lol nigger
+ethnicity,us white
+ethnicity,black dumb peopl
+ethnicity,call would
+ethnicity,black man
+ethnicity,white would
+ethnicity,ass black dumb fuck nigger
+ethnicity,amp white
+ethnicity,color dont
+ethnicity,ass dumb fuck nigger white
+ethnicity,ass dumb fuck nigger yall
+ethnicity,black us
+ethnicity,black would
+ethnicity,dont im
+ethnicity,ass dumb fuck nigger stupid
+ethnicity,dont get
+ethnicity,call nigger white
+ethnicity,amp black
+ethnicity,ass call dumb fuck nigger
+ethnicity,black even
+ethnicity,dumb fuck name nigger
+ethnicity,im say
+ethnicity,ass dumb fuck go nigger
+ethnicity,ass dumb fuck nigger shit
+ethnicity,dont say
+ethnicity,ass dumb fuck im nigger
+ethnicity,know peopl
+ethnicity,damn dumb fuck nigger
+ethnicity,black want
+ethnicity,dumb fuck kill nigger
+ethnicity,dumb fuck nigger stop
+ethnicity,dumb fuck nigger still
+ethnicity,say shit
+ethnicity,dumb fuck nigger see
+ethnicity,dont like
+ethnicity,ass dumb fuck like nigger
+ethnicity,dumb fuck oh
+ethnicity,dumb fuck nigger right
+ethnicity,cant dumb fuck nigger
+ethnicity,dumb fuck nigger would
+ethnicity,dumb fuck nigger racist
+ethnicity,dumb fuck nigger shut
+ethnicity,dumb fuck life nigger
+ethnicity,dumb fuck nigger your
+ethnicity,ass dumb fuck get nigger
+ethnicity,bitch dumb fuck nigger shit
+ethnicity,dumb fuck need nigger
+ethnicity,dumb even fuck nigger
+ethnicity,dumb fuck nigger talk
+ethnicity,aint dumb fuck nigger
+ethnicity,black think
+ethnicity,dumb fuck lmao nigger
+ethnicity,dumb fuck nigger us
+ethnicity,back dumb fuck nigger
+ethnicity,dumb fuck nigger say
+ethnicity,dumb fat fuck nigger
+ethnicity,dumb fuck know nigger
+ethnicity,call said
+ethnicity,dumb fuck nigger ur
+ethnicity,dumb fuck sound
+ethnicity,dumb fuck nigger that
+ethnicity,dumb fuck nigger tri
+ethnicity,dumb fuck got nigger
+ethnicity,black see
+ethnicity,dumb fuck hate nigger
+ethnicity,dumb fuck nigger want
+ethnicity,dumb fuck give nigger
+ethnicity,dumb fuck nigger realli
+ethnicity,dumb fuck nigger peopl
+ethnicity,dumb fuck nigger one
+ethnicity,dumb fuck nigger said
+ethnicity,ass dont dumb fuck nigger
+ethnicity,dumb fuck nigger think
+ethnicity,like say
+ethnicity,dumb fuck hes
+ethnicity,fuck nigger sound
+ethnicity,dumb fuck look nigger
+ethnicity,dont racism
+ethnicity,dumb fuck make nigger
+ethnicity,dumb fuck nigger word
+ethnicity,amp dumb fuck nigger
+ethnicity,dumb fuck man nigger
+ethnicity,im like
+ethnicity,black make
+ethnicity,dumb fuck let
+ethnicity,black im nigger
+ethnicity,black that
+ethnicity,black said
+ethnicity,black still
+ethnicity,fuck girl nigger
+ethnicity,dumb mean nigger
+ethnicity,dumb girl nigger
+ethnicity,dumb let nigger
+ethnicity,color like
+ethnicity,black your
+ethnicity,anyth get
+ethnicity,black cant
+ethnicity,black hate
+ethnicity,fuck let nigger
+ethnicity,bitch black nigger
+ethnicity,think white
+ethnicity,black know
+ethnicity,black nigger rt
+ethnicity,call know
+ethnicity,im one
+ethnicity,color one
+ethnicity,black fuck white
+ethnicity,im ur
+ethnicity,one racism
+ethnicity,im peopl
+ethnicity,like racism
+ethnicity,dont first
+ethnicity,black dont nigger
+ethnicity,black look
+ethnicity,know white
+ethnicity,black go
+ethnicity,call get
+ethnicity,black get
+ethnicity,get peopl
+ethnicity,one say
+ethnicity,get one
+ethnicity,black like nigger
+ethnicity,dont one
+ethnicity,call dont
+ethnicity,dont ur
+ethnicity,call im
+ethnicity,face nigger
+ethnicity,get like
+ethnicity,nigger oh
+ethnicity,call color
+ethnicity,im white
+ethnicity,get white
+ethnicity,hes nigger
+ethnicity,kid nigger
+ethnicity,call racism
+ethnicity,nigger tweet
+ethnicity,guy nigger
+ethnicity,nigger someon
+ethnicity,one peopl
+ethnicity,call one
+ethnicity,day nigger
+ethnicity,nigger use
+ethnicity,day fuck
+ethnicity,love nigger
+ethnicity,first white
+ethnicity,never nigger
+ethnicity,ur white
+ethnicity,fuck mean
+ethnicity,nigger person
+ethnicity,fuck never
+ethnicity,ass say
+ethnicity,black first
+ethnicity,nigger racism
+gender,gay insult joke rape use
+gender,kat mkr
+gender,bitch call dog femal
+gender,bitch call femal male
+gender,bitch call femal fuck
+gender,bitch call femal women
+gender,im rt sexist women
+gender,bitch call femal like
+gender,bitch call femal say
+gender,bitch call dont femal
+gender,arent funni
+gender,use word
+gender,call rt sexist
+gender,bitch call femal im
+gender,femal rt sexist
+gender,femal im sexist
+gender,date gay joke make rape
+gender,dont gay joke like rape
+gender,men women
+gender,gay joke peopl rape use
+gender,gay peopl rape think
+gender,dont gay joke peopl rape
+gender,sexist woman
+gender,dont know
+gender,gay joke make peopl rape
+gender,gay joke like peopl rape
+gender,gay joke make rape say
+gender,joke peopl say
+gender,girl sexist
+gender,funni gay joke peopl rape
+gender,gay joke make rape use
+gender,peopl rape say
+gender,rt woman
+gender,joke peopl think
+gender,dont gay joke make rape
+gender,funni think
+gender,gay joke like make rape
+gender,bad gay joke rape
+gender,fun gay joke rape
+gender,gay joke made rape
+gender,gay joke prison rape
+gender,arent gay joke rape
+gender,gay joke ok rape
+gender,gay isnt joke rape
+gender,gay joke rape watch
+gender,gay joke rape that
+gender,call woman
+gender,gay joke know rape
+gender,gay joke laugh rape
+gender,girl rt
+gender,gay joke rape thing
+gender,gay joke mean rape
+gender,everyon gay joke rape
+gender,gay joke rape time
+gender,gay joke rape tell
+gender,gay joke rape someon
+gender,fuck gay joke rape
+gender,gay joke rape shit
+gender,gay joke rape sex
+gender,gay joke love rape
+gender,gay joke need rape
+gender,gay guy joke rape
+gender,gay joke rape your
+gender,black gay joke rape
+gender,gay joke rape still
+gender,gay joke kill rape
+gender,gay good joke rape
+gender,gay joke rape said
+gender,gay joke never rape
+gender,gay joke rape stop
+gender,gay rape tweet
+gender,gay joke rape see
+gender,gay joke rape way
+gender,cant gay joke rape
+gender,gay joke rape show
+gender,gay joke okay rape
+gender,gay joke rape talk
+gender,gay joke rape word
+gender,etc gay joke rape
+gender,doesnt gay joke rape
+gender,gay im joke rape
+gender,gay joke racist rape
+gender,also gay joke rape
+gender,gay hate joke rape
+gender,call gay joke rape
+gender,gay joke rape take
+gender,gay joke much rape
+gender,gay joke rape realli
+gender,gay go joke rape
+gender,gay joke men rape
+gender,ill joke rape
+gender,gay ill joke
+gender,gay joke rape women
+gender,gay joke rape think
+gender,gay person rape
+gender,even gay joke rape
+gender,gay rape tri
+gender,gay rape year
+gender,gay joke tweet
+gender,gay joke one rape
+gender,gay get joke rape
+gender,gay joke rape victim
+gender,gay girl joke rape
+gender,gay joke man rape
+gender,friend gay joke rape
+gender,gay joke rape right
+gender,gay joke year
+gender,joke rape year
+gender,joke rape theyr
+gender,gay hes joke rape
+gender,gay joke rape white
+gender,come gay rape
+gender,gay joke rape want
+gender,gay joke rape would
+gender,gay joke rape sexual
+gender,got joke rape
+gender,joke make rape think
+gender,joke rape tweet
+gender,gay rape sexist
+gender,amp gay joke rape
+gender,boy gay joke rape
+gender,funni joke make rape
+gender,dont say
+gender,gay joke tri
+gender,come joke rape
+gender,dont think
+gender,gay get make
+gender,get joke make
+gender,girl im
+gender,like say
+gender,gay make think
+gender,dont men
+gender,call one
+gender,call man
+gender,dont get
+gender,men sexist
+gender,call use
+gender,get like
+gender,dont im
+gender,dont women
+gender,like think
+gender,femal think
+gender,call men
+gender,call get
+gender,bitch get
+gender,im say
+gender,femal men
+gender,gay theyr
+gender,call think
+gender,im like
+gender,dont sexist
+gender,find rape
+gender,actual joke
+gender,joke person
+gender,make men
+gender,let rape
+gender,gay got
+gender,joke let
+gender,dont rt
+gender,peopl women
+gender,like women
+gender,make women
+gender,im make
+gender,male rape
+gender,call peopl
+gender,joke male
+other_cyberbullying,bulli lol
+other_cyberbullying,dont know
+other_cyberbullying,fuck rt
+other_cyberbullying,bulli get
+other_cyberbullying,bulli im
+religion,isi kill quran terrorist
+religion,human jihad kill terrorist
+religion,isi islam quran terrorist
+religion,isi muslim quran terrorist
+religion,human islam jihad terrorist
+religion,isi like quran
+religion,christian radic support trump
+religion,christian im right woman
+religion,human jihad muslim
+religion,christian right say woman
+religion,christian good right woman
+religion,christian radic right support
+religion,christian god right woman
+religion,amp christian radic support
+religion,christian peopl radic support
+religion,christian like right woman
+religion,christian islam radic support
+religion,islam terror ur
+religion,christian dont radic support
+religion,christian like radic support
+religion,christian muslim radic support
+religion,isi like terrorist
+religion,quran read
+religion,like quran terrorist
+religion,india islam terror
+religion,islam terror world
+religion,jihad muslim terrorist
+religion,islam terror us
+religion,islam radic terror
+religion,islam say terror
+religion,dont idiot know muslim
+religion,christian peopl woman
+religion,dont islam terror
+religion,islam kill terror
+religion,islam know terror
+religion,human muslim terrorist
+religion,islam like terror
+religion,islam peopl terror
+religion,christian peopl right
+religion,christian know right
+religion,group terrorist
+religion,islam kill terrorist
+religion,islam terror terrorist
+religion,idiot like muslim peopl
+religion,islam muslim terror
+religion,kill muslim terrorist
+religion,like look
+religion,christian dont right
+religion,name terrorist
+religion,dont idiot muslim peopl
+religion,idiot muslim your
+religion,fuck idiot muslim
+religion,idiot muslim tweet
+religion,idiot im muslim
+religion,back idiot muslim
+religion,idiot muslim racist
+religion,didnt idiot muslim
+religion,dont idiot like muslim
+religion,idiot muslim think
+religion,black idiot muslim
+religion,go idiot muslim
+religion,idiot muslim well
+religion,idiot let muslim
+religion,idiot muslim white
+religion,happen idiot muslim
+religion,idiot muslim realli
+religion,attack terrorist
+religion,idiot muslim said
+religion,idiot muslim take
+religion,idiot make muslim
+religion,idiot muslim problem
+religion,idiot muslim see
+religion,cant idiot muslim
+religion,come idiot muslim
+religion,idiot muslim way
+religion,idiot muslim talk
+religion,idiot muslim that
+religion,get idiot muslim
+religion,idiot muslim wrong
+religion,believ idiot muslim
+religion,alway idiot muslim
+religion,give idiot muslim
+religion,idiot indian muslim
+religion,fact idiot muslim
+religion,ask idiot muslim
+religion,guy idiot muslim
+religion,idiot muslim thing
+religion,idiot much muslim
+religion,idiot muslim need
+religion,even idiot muslim
+religion,idiot muslim would
+religion,idiot muslim year
+religion,idiot muslim tell
+religion,also idiot muslim
+religion,human world
+religion,call idiot muslim
+religion,american christian
+religion,first idiot muslim
+religion,idiot muslim stop
+religion,countri idiot muslim
+religion,idiot muslim understand
+religion,communiti idiot muslim
+religion,hate idiot muslim
+religion,idiot india muslim
+religion,even know
+religion,idiot muslim one
+religion,idiot muslim time
+religion,hindu idiot muslim
+religion,idiot muslim noth
+religion,god idiot muslim
+religion,idiot muslim still
+religion,idiot muslim say
+religion,doesnt idiot muslim
+religion,idiot mani muslim
+religion,idiot look muslim
+religion,idiot muslim use
+religion,good idiot muslim
+religion,idiot muslim us
+religion,islam muslim quran
+religion,idiot mean muslim
+religion,idiot muslim pakistan
+religion,right trump
+religion,idiot live muslim
+religion,idiot muslim name
+religion,hindus idiot muslim
+religion,idiot muslim show
+religion,idiot muslim want
+religion,idiot muslim tri
+religion,dont even muslim
+religion,idiot muslim women
+religion,idiot love muslim
+religion,kill peopl
+religion,idiot muslim world
+religion,love right
+religion,idiot kill muslim
+religion,idiot muslim terrorist
+religion,everi idiot muslim
+religion,idiot muslim read
+religion,idiot muslim right
+religion,idiot muslim never
+religion,idiot muslim religion
+religion,idiot muslim support
+religion,christian love
+religion,terrorist world
+religion,amp idiot muslim
+religion,christian idiot muslim
+religion,idiot islam muslim
+religion,christian jew
+religion,christian white
+religion,dont muslim think
+religion,right that
+religion,idiot know like
+religion,amp human
+religion,support would
+religion,islam know muslim
+religion,dont muslim say
+religion,call terrorist
+religion,dont go
+religion,quran say
+religion,radic us
+religion,dont want
+religion,amp terrorist
+religion,peopl think
+religion,get peopl
+religion,christian would
+religion,religion terrorist
+religion,islam muslim terrorist
+religion,know like muslim
+religion,islam religion
+religion,right your
+religion,christian thing
+religion,go right
+religion,countri dont
+religion,one peopl
+religion,believ christian
+religion,islam pakistan
+religion,religion terror
+religion,dont islam muslim
+religion,dont get
+religion,idiot start
+religion,know say
+religion,law muslim
+religion,idiot keep
+religion,christian that
+religion,know peopl
+religion,peopl say
+religion,muslim stupid
+religion,countri peopl
+religion,peopl terrorist
+religion,countri like
+religion,amp terror
+religion,islam never
+religion,bad muslim
+religion,like say
+religion,done muslim
+religion,amp like
+religion,idiot speak
+religion,differ muslim
+religion,actual muslim
+religion,muslim start
+religion,america muslim
+religion,christian need
+religion,anyth muslim
+religion,isi peopl
+religion,christian live
+religion,islam murder
+religion,get right
+religion,care muslim
+religion,day muslim
+religion,muslim speak
+religion,christian us
+religion,amp dont
+religion,christian time
+religion,dont kill
+religion,muslim pleas
+religion,muslim yes
+religion,keep muslim
+religion,muslim state
+religion,muslim whole
+religion,christian your
+religion,kill like
+religion,human peopl
+religion,amp right
+religion,islam stop
+religion,jew muslim
+religion,muslim rape
+religion,muslim nation
+religion,man muslim
+religion,islam like muslim
+religion,christian hate
+religion,one terrorist
+religion,like think
+religion,human right
+religion,muslim word
+religion,know woman
+religion,say terrorist
+religion,right think
+religion,human terror
+religion,muslim person
+religion,attack muslim
+religion,one radic
+religion,fight muslim
+religion,call christian
+religion,islam want
+religion,amp islam
+religion,islam use
+religion,countri terrorist
+religion,christian get
+religion,christian one
+religion,follow muslim
+religion,know radic
+religion,dont terrorist
+religion,call islam
+religion,islam time
+religion,like one
+religion,also islam
+religion,know support
+religion,islam one
+religion,christian make
+religion,one right
+religion,also christian
+religion,christian go
+religion,muslim must
+religion,hate islam
+religion,countri islam
+religion,christian even
+religion,murder muslim
+religion,support terrorist
+religion,christian want
+religion,christian think
+religion,islam think
+religion,know terrorist
+religion,go islam
+religion,group muslim
+religion,even islam
+religion,support terror
+religion,radic terrorist
+religion,christian religion
+religion,christian countri
+religion,muslim trump
+religion,christian human
