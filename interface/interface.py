@@ -6,6 +6,7 @@ from joblib import load
 from utils.text_preprocessing import preprocess_text
 from PIL import Image, ImageTk
 import os
+from treeinterpreter import treeinterpreter as ti
 
 
 label_map = {
@@ -53,7 +54,7 @@ def on_check():
                 text=f"Cyberbullying Message: {predicted_label}",
                 fg="red"
             )
-            result_label.after(1000, explanation_window(predicted_label))
+            result_label.after(1000, explanation_window(predicted_label, preprocessed ))
 
         else:
             result_label.config(text="Not Cyberbullying", fg="green")
@@ -64,14 +65,13 @@ def on_check():
 
 
 
-def explanation_window(predicted_label):
+def explanation_window(predicted_label, preprocessed):
     import tkinter as tk
     from tkinter import ttk
     from PIL import Image, ImageTk
     import pandas as pd
     import os
 
-    # new window creation
     new_win = tk.Toplevel()
     new_win.title("Explanation")
 
@@ -79,20 +79,28 @@ def explanation_window(predicted_label):
     screen_height = new_win.winfo_screenheight()
     win_width = screen_width // 2
     win_height = screen_height // 2
-    new_win.geometry(f"{win_width}x{win_height}+100+100")  
+    new_win.geometry(f"{win_width}x{win_height}+100+100")
     new_win.update_idletasks()
 
     # ------------------------
-    # CONTAINER: top 25 word + association rules
+    # MAIN FRAME
     # ------------------------
-    image_and_rules_frame = tk.Frame(new_win)
-    image_and_rules_frame.pack(fill=tk.BOTH, expand=True)
+    main_frame = tk.Frame(new_win)
+    main_frame.pack(fill=tk.BOTH, expand=True)
+
+    # LEFT
+    left_frame = tk.Frame(main_frame, width=win_width // 2, bg="#f0f0f0")
+    left_frame.pack(side=tk.LEFT, fill=tk.BOTH)
+
+    # RIGHT
+    right_frame = tk.Frame(main_frame, width=win_width // 2)
+    right_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
     # ------------------------
-    # IMMAGINE (up)
+    # PICTURE RIGHT+BOTTOM
     # ------------------------
-    image_frame = tk.Frame(image_and_rules_frame)
-    image_frame.pack(side=tk.TOP, anchor="n", pady=10)
+    image_frame = tk.Frame(right_frame)
+    image_frame.pack(side=tk.TOP, pady=10)
 
     image_filename = f"top_25_{predicted_label}.png"
     image_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "word_class_distribution", image_filename))
@@ -107,7 +115,7 @@ def explanation_window(predicted_label):
             img_tk = ImageTk.PhotoImage(img)
 
             img_label = tk.Label(image_frame, image=img_tk)
-            img_label.image = img_tk  
+            img_label.image = img_tk
             img_label.pack()
         except Exception as e:
             tk.Label(image_frame, text="Error loading image").pack()
@@ -117,7 +125,7 @@ def explanation_window(predicted_label):
         print(f"Not found: {image_path}")
 
     # ------------------------
-    # REGOLE (bottom, scrollable)
+    # RULES RIGHT+BOTTOM
     # ------------------------
     try:
         rules_df = pd.read_csv(os.path.join(os.path.dirname(__file__), "..", "association_rules", "association_rules.csv"))
@@ -125,8 +133,11 @@ def explanation_window(predicted_label):
     except Exception as e:
         filtered_rules = [f"Could not load rules: {e}"]
 
-    rules_container = tk.Frame(image_and_rules_frame)
-    rules_container.pack(side=tk.TOP, fill=tk.BOTH, expand=True, padx=10, pady=10)
+    rules_container = tk.Frame(right_frame)
+    rules_container.pack(side=tk.TOP, fill=tk.BOTH, expand=True, padx=10, pady=(0, 10))
+
+    title_label = tk.Label(rules_container, text="Association Rules", font=("Arial", 12, "bold"), anchor="w")
+    title_label.pack(side=tk.TOP, fill=tk.X, pady=(0, 5))
 
     canvas = tk.Canvas(rules_container)
     scrollbar = ttk.Scrollbar(rules_container, orient="vertical", command=canvas.yview)
@@ -137,13 +148,18 @@ def explanation_window(predicted_label):
         lambda e: canvas.configure(scrollregion=canvas.bbox("all"))
     )
 
-    canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
+    window_id = canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
+
+    def resize_scrollable(event):
+        canvas.itemconfig(window_id, width=event.width)
+
+    canvas.bind("<Configure>", resize_scrollable)
+
     canvas.configure(yscrollcommand=scrollbar.set)
 
     canvas.pack(side="left", fill="both", expand=True)
     scrollbar.pack(side="right", fill="y")
 
-    half_width = int(win_width * 0.5)
     if filtered_rules:
         for i, rule in enumerate(filtered_rules):
             bg_color = "#ffffff" if i % 2 == 0 else "#e6e6e6"
@@ -152,7 +168,7 @@ def explanation_window(predicted_label):
                 text=rule,
                 anchor="w",
                 justify="left",
-                wraplength=half_width,
+                wraplength=int(win_width * 0.5 - 20),
                 bg=bg_color,
                 fg="#222222",
                 padx=5,
@@ -161,8 +177,65 @@ def explanation_window(predicted_label):
             ).pack(fill="x")
     else:
         tk.Label(scrollable_frame, text="No rules found for this class.").pack()
+    
+    # ------------------------
+    # LEFT TREE INTERPRETER
+    # ------------------------
+    add_treeinterpreter_table(left_frame, preprocessed, multiclass_clf.named_steps["model"] , multiclass_voc)
 
+def add_treeinterpreter_table(left_frame, preprocessed, model, vectorizer):
 
+    # Vectorization
+    x = vectorizer.transform([preprocessed]).toarray().astype("float32")
+    feature_names = vectorizer.get_feature_names_out()
+
+    # prediction
+    prediction, bias, contributions = ti.predict(model, x)
+    predicted_label_id = np.argmax(prediction)
+
+    # dataframe construction
+    data = []
+    for i in range(len(feature_names)):
+        data.append({
+            "feature": feature_names[i],
+            "contribution": contributions[0][i][predicted_label_id],
+            "tfidf_value": x[0][i]
+        })
+
+    df_interp = pd.DataFrame(data)
+    df_interp_sorted = df_interp.reindex(df_interp.contribution.abs().sort_values(ascending=False).index)
+    df_top_50 = df_interp_sorted.head(50)
+
+    container = tk.Frame(left_frame)
+    container.pack(fill="both", expand=True, padx=10, pady=10)
+
+    title_label = tk.Label(container, text="Top 50 Features (TreeInterpreter)", font=("Arial", 12, "bold"))
+    title_label.pack(pady=(0, 5), anchor="w")
+
+    tree_scroll = ttk.Scrollbar(container)
+    tree_scroll.pack(side=tk.RIGHT, fill=tk.Y)
+
+    tree = ttk.Treeview(container, yscrollcommand=tree_scroll.set)
+    tree.pack(fill="both", expand=True)
+    tree_scroll.config(command=tree.yview)
+
+    tree["columns"] = ("feature", "contribution", "tfidf")
+    tree["show"] = "headings"
+
+    tree.heading("feature", text="Feature")
+    tree.heading("contribution", text="Contribution")
+    tree.heading("tfidf", text="TF-IDF")
+
+    tree.column("feature", anchor="w", width=120)
+    tree.column("contribution", anchor="center", width=100)
+    tree.column("tfidf", anchor="center", width=100)
+
+    for _, row in df_top_50.iterrows():
+        tree.insert("", tk.END, values=(
+            row["feature"],
+            f"{row['contribution']:.4f}",
+            f"{row['tfidf_value']:.4f}"
+        ))
 
 # Loading CSV example previously selected
 def load_examples():
