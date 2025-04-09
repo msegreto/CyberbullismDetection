@@ -3,10 +3,15 @@ from tkinter import ttk
 from tkinter import messagebox
 import pandas as pd
 from joblib import load
-from utils.text_preprocessing import preprocess_text
 from PIL import Image, ImageTk
-import os
 from treeinterpreter import treeinterpreter as ti
+import numpy as np
+
+import sys
+import os
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..')))
+from utils.text_preprocessing import preprocess_text
 
 
 label_map = {
@@ -18,12 +23,12 @@ label_map = {
 }
 
 # vocabulary loading
-bynary_voc = load("model/tfidf_vocabulary.pkl")
-multiclass_voc = load("model/tfidf_vocabulary_multiclass.pkl")
+bynary_voc = load("../model/tfidf_vocabulary.pkl")
+multiclass_voc = load("../model/tfidf_vocabulary_multiclass.pkl")
 # binary model loading
-binary_clf = load("model/grid_search_binary_f1/RandomForest_TF-IDF.pkl")
+binary_clf = load("../model/grid_search_binary_f1/RandomForest_TF-IDF.pkl")
 # Carica classificatore multiclass
-multiclass_clf = load("model/grid_search_multiclass/RandomForest_TF-IDF_multiclass.pkl")
+multiclass_clf = load("../model/grid_search_multiclass/RandomForest_TF-IDF_multiclass.pkl")
 
 # check botton call
 def on_check():
@@ -66,11 +71,6 @@ def on_check():
 
 
 def explanation_window(predicted_label, preprocessed):
-    import tkinter as tk
-    from tkinter import ttk
-    from PIL import Image, ImageTk
-    import pandas as pd
-    import os
 
     new_win = tk.Toplevel()
     new_win.title("Explanation")
@@ -240,7 +240,7 @@ def add_treeinterpreter_table(left_frame, preprocessed, model, vectorizer):
 # Loading CSV example previously selected
 def load_examples():
     try:
-        df = pd.read_csv("dataset/selected_explanable_example.csv")
+        df = pd.read_csv("../dataset/selected_explanable_example.csv")
         return [f"[{row['label_name']}] {row['text']}" for _, row in df.iterrows()]
     except Exception as e:
         print("Error during example loading:", e)
