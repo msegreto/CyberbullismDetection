@@ -65,7 +65,7 @@ def on_check():
             result_label.config(text="Not Cyberbullying", fg="green")
 
     except Exception as e:
-        result_label.config(text="Errore nella classificazione", fg="orange")
+        result_label.config(text="Error during classification", fg="orange")
         print("Errore:", e)
 
 
