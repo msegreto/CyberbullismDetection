@@ -2,3 +2,4 @@ model/*
 papers/*
 project_proposal/*
 .DS_Store
+__pycache__/
