@@ -241,7 +241,7 @@ def add_treeinterpreter_table(left_frame, preprocessed, model, vectorizer):
 def load_examples():
     try:
         df = pd.read_csv("../dataset/selected_explanable_example.csv")
-        return [f"[{row['label_name']}] {row['text']}" for _, row in df.iterrows()]
+        return [f"[{row['label_name']}] {row['original_text']}" for _, row in df.iterrows()]
     except Exception as e:
         print("Error during example loading:", e)
         return []
