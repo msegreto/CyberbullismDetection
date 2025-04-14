@@ -12,6 +12,7 @@ import os
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..')))
 from utils.text_preprocessing import preprocess_text
+from utils.bad_word_blurrer import blur_text
 
 
 label_map = {
@@ -232,7 +233,7 @@ def add_treeinterpreter_table(left_frame, preprocessed, model, vectorizer):
 
     for _, row in df_top_50.iterrows():
         tree.insert("", tk.END, values=(
-            row["feature"],
+            blur_text(row["feature"]),
             f"{row['contribution']:.4f}",
             f"{row['tfidf_value']:.4f}"
         ))
@@ -241,7 +242,7 @@ def add_treeinterpreter_table(left_frame, preprocessed, model, vectorizer):
 def load_examples():
     try:
         df = pd.read_csv("../dataset/selected_explanable_example.csv")
-        return [f"[{row['label_name']}] {row['text']}" for _, row in df.iterrows()]
+        return [f"[{row['label_name']}] {row['original_text']}" for _, row in df.iterrows()]
     except Exception as e:
         print("Error during example loading:", e)
         return []
