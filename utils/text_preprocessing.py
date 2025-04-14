@@ -6,7 +6,7 @@ from nltk.stem import SnowballStemmer
 
 stop_words = set(stopwords.words('english'))
 stemmer = SnowballStemmer("english")
-tokenizer = RegexpTokenizer(r'\b[a-z]{2,}\b')  # solo parole con almeno 2 lettere
+tokenizer = RegexpTokenizer(r'\b[a-z]{2,}\b')  
 
 def preprocess_text(text):
     # Lowercase
