@@ -6,13 +6,18 @@ from joblib import load
 from PIL import Image, ImageTk
 from treeinterpreter import treeinterpreter as ti
 import numpy as np
+from sklearn.pipeline import Pipeline
 
 import sys
 import os
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(os.path.abspath(os.path.join(os.getcwd(), '..')))
-from utils.text_preprocessing import preprocess_text
+from utils.text_preprocessing import preprocess_text, TextPreprocessor #Run time usage
 from utils.bad_word_blurrer import blur_text
+from utils.two_stage_classifier import TwoStageClassifier
+
+binary_pipeline = load("../model/final_pipeline_binary.pkl")
+multiclass_pipeline = load("../model/final_pipeline_multiclass.pkl")
 
 
 label_map = {
@@ -23,52 +28,33 @@ label_map = {
     4: "religion"
 }
 
-# vocabulary loading
-bynary_voc = load("../model/tfidf_vocabulary.pkl")
-multiclass_voc = load("../model/tfidf_vocabulary_multiclass.pkl")
-# binary model loading
-binary_clf = load("../model/grid_search_binary_f1/RandomForest_TF-IDF.pkl")
-# Carica classificatore multiclass
-multiclass_clf = load("../model/grid_search_multiclass/RandomForest_TF-IDF_multiclass.pkl")
+pipeline_2stage = Pipeline([
+    ("classifier", TwoStageClassifier(binary_pipeline, multiclass_pipeline, label_map))
+])
 
-# check botton call
+
 def on_check():
     text = message_entry.get()
     if not text.strip():
         messagebox.showwarning("Warning", "The system cannot analyze an empty message")
         return
 
-    # Preprocessing
-    preprocessed = preprocess_text(text)
-
     try:
-        #vectorization
-        X = bynary_voc.transform([preprocessed])
+        prediction = pipeline_2stage.predict([text])[0]
 
-        # binary prediction
-        prediction = binary_clf.predict(X)[0]
-
-        if prediction == 1:
-
-            X = multiclass_voc.transform([preprocessed])
-            # multiclass prediction
-            multiclass_prediction = multiclass_clf.predict(X)[0]
-
-            predicted_label = label_map.get(multiclass_prediction, "Unknown")
-            
+        if prediction == "not_cyberbullying":
+            result_label.config(text="Not Cyberbullying", fg="green")
+        else:
+            label = prediction.split(":")[1]
             result_label.config(
-                text=f"Cyberbullying Message: {predicted_label}",
+                text=f"Cyberbullying Message: {label}",
                 fg="red"
             )
-            result_label.after(1000, explanation_window(predicted_label, preprocessed ))
-
-        else:
-            result_label.config(text="Not Cyberbullying", fg="green")
+            result_label.after(1000, explanation_window(label, preprocess_text(text)))
 
     except Exception as e:
         result_label.config(text="Error during classification", fg="orange")
         print("Errore:", e)
-
 
 
 def explanation_window(predicted_label, preprocessed):
@@ -182,10 +168,12 @@ def explanation_window(predicted_label, preprocessed):
     # ------------------------
     # LEFT TREE INTERPRETER
     # ------------------------
-    add_treeinterpreter_table(left_frame, preprocessed, multiclass_clf.named_steps["model"] , multiclass_voc)
+    add_treeinterpreter_table(left_frame, preprocessed)
 
-def add_treeinterpreter_table(left_frame, preprocessed, model, vectorizer):
+def add_treeinterpreter_table(left_frame, preprocessed):
 
+    model = multiclass_pipeline.named_steps["model"]
+    vectorizer = multiclass_pipeline.named_steps["vectorizer"]
     # Vectorization
     x = vectorizer.transform([preprocessed]).toarray().astype("float32")
     feature_names = vectorizer.get_feature_names_out()

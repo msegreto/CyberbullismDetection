@@ -1,8 +1,10 @@
 import re
 import emoji
+import pandas as pd
 from nltk.corpus import stopwords
 from nltk.tokenize import RegexpTokenizer
 from nltk.stem import SnowballStemmer
+from sklearn.base import BaseEstimator, TransformerMixin
 
 stop_words = set(stopwords.words('english'))
 stemmer = SnowballStemmer("english")
@@ -37,3 +39,9 @@ def preprocess_text(text):
     
     return ' '.join(processed)
 
+class TextPreprocessor(BaseEstimator, TransformerMixin):
+    def fit(self, X, y=None):
+        return self
+
+    def transform(self, X):
+        return pd.Series(X).apply(preprocess_text)
