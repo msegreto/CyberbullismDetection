@@ -1,4 +1,5 @@
 import numpy as np
+from sklearn.base import BaseEstimator, TransformerMixin
 
 def compute_w2v_features(texts, model, vector_size):
     features = []
@@ -12,3 +13,14 @@ def compute_w2v_features(texts, model, vector_size):
             avg_vector = np.zeros(vector_size)
         features.append(avg_vector)
     return np.array(features)
+
+class W2VTransformer(BaseEstimator, TransformerMixin):
+    def __init__(self, model):
+        self.model = model
+        self.dim = model.vector_size
+
+    def fit(self, X, y=None):
+        return self
+
+    def transform(self, X):
+        return compute_w2v_features(X, self.model, self.dim)
