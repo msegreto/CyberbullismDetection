@@ -56,7 +56,7 @@ def on_check():
         result_label.config(text="Error during classification", fg="orange")
         print("Errore:", e)
 
-
+# Explanation Window Creation
 def explanation_window(predicted_label, preprocessed):
 
     new_win = tk.Toplevel()
@@ -114,20 +114,36 @@ def explanation_window(predicted_label, preprocessed):
     # ------------------------
     # RULES RIGHT+BOTTOM
     # ------------------------
+    load_itemsets_by_class(right_frame, predicted_label, win_width)
+    # ------------------------
+    # LEFT TREE INTERPRETER
+    # ------------------------
+    add_treeinterpreter_table(left_frame, preprocessed)
+
+# Global multiclass explanation with maximal and closed itemsets
+def load_itemsets_by_class(parent_frame, predicted_label, win_width):
     try:
-        rules_df = pd.read_csv(os.path.join(os.path.dirname(__file__), "..", "association_rules", "association_rules.csv"))
-        filtered_rules = rules_df[rules_df['Class'] == predicted_label]['Rules'].tolist()
+        base_path = os.path.dirname(__file__)
+        closed_df = pd.read_csv(os.path.join(base_path, "..", "itemset", "closed_itemsets_by_class.csv"))
+        maximal_df = pd.read_csv(os.path.join(base_path, "..", "itemset", "maximal_itemsets_by_class.csv"))
+
+        closed_items = closed_df[closed_df['class'] == predicted_label][['itemset', 'support']].values.tolist()
+        maximal_items = maximal_df[maximal_df['class'] == predicted_label][['itemset', 'support']].values.tolist()
+
+        combined_items = [('Closed', blur_text(item), support) for item, support in closed_items] + \
+                         [('Maximal', blur_text(item), support) for item, support in maximal_items]
     except Exception as e:
-        filtered_rules = [f"Could not load rules: {e}"]
+        combined_items = [("Error", f"Could not load itemsets: {e}", "")]
 
-    rules_container = tk.Frame(right_frame)
-    rules_container.pack(side=tk.TOP, fill=tk.BOTH, expand=True, padx=10, pady=(0, 10))
+    # Container frame
+    itemsets_container = tk.Frame(parent_frame)
+    itemsets_container.pack(side=tk.TOP, fill=tk.BOTH, expand=True, padx=10, pady=(0, 10))
 
-    title_label = tk.Label(rules_container, text="Association Rules", font=("Arial", 12, "bold"), anchor="w")
+    title_label = tk.Label(itemsets_container, text="Frequent Itemsets", font=("Arial", 12, "bold"), anchor="w")
     title_label.pack(side=tk.TOP, fill=tk.X, pady=(0, 5))
 
-    canvas = tk.Canvas(rules_container)
-    scrollbar = ttk.Scrollbar(rules_container, orient="vertical", command=canvas.yview)
+    canvas = tk.Canvas(itemsets_container)
+    scrollbar = ttk.Scrollbar(itemsets_container, orient="vertical", command=canvas.yview)
     scrollable_frame = tk.Frame(canvas)
 
     scrollable_frame.bind(
@@ -141,35 +157,24 @@ def explanation_window(predicted_label, preprocessed):
         canvas.itemconfig(window_id, width=event.width)
 
     canvas.bind("<Configure>", resize_scrollable)
-
     canvas.configure(yscrollcommand=scrollbar.set)
 
     canvas.pack(side="left", fill="both", expand=True)
     scrollbar.pack(side="right", fill="y")
 
-    if filtered_rules:
-        for i, rule in enumerate(filtered_rules):
+    if combined_items:
+        for i, (item_type, itemset, support) in enumerate(combined_items):
             bg_color = "#ffffff" if i % 2 == 0 else "#e6e6e6"
-            tk.Label(
-                scrollable_frame,
-                text=rule,
-                anchor="w",
-                justify="left",
-                wraplength=int(win_width * 0.5 - 20),
-                bg=bg_color,
-                fg="#222222",
-                padx=5,
-                pady=4,
-                font=("Arial", 10)
-            ).pack(fill="x")
-    else:
-        tk.Label(scrollable_frame, text="No rules found for this class.").pack()
-    
-    # ------------------------
-    # LEFT TREE INTERPRETER
-    # ------------------------
-    add_treeinterpreter_table(left_frame, preprocessed)
+            row_frame = tk.Frame(scrollable_frame, bg=bg_color)
+            row_frame.pack(fill="x", expand=True)
 
+            tk.Label(row_frame, text=item_type, font=("Arial", 10, "bold"), fg="#000000", bg=bg_color, anchor="w", width=10).pack(side="left", padx=5, pady=4)
+            tk.Label(row_frame, text=itemset, font=("Arial", 10), fg="#000000", bg=bg_color, anchor="w", justify="left", wraplength=int(win_width * 0.5 - 100)).pack(side="left", fill="x", expand=True, padx=5, pady=4)
+            tk.Label(row_frame, text=f"Support: {support:.2f}", font=("Arial", 9, "italic"), fg="#333333", bg=bg_color, anchor="e").pack(side="right", padx=5, pady=4)
+    else:
+        tk.Label(scrollable_frame, text="No itemsets found for this class.").pack()
+
+# Local multiclass explanation provided by treeinterprter
 def add_treeinterpreter_table(left_frame, preprocessed):
 
     model = multiclass_pipeline.named_steps["model"]
