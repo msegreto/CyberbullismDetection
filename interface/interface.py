@@ -273,7 +273,7 @@ message_entry = tk.Entry(frame, width=50, font=("Arial", 14))
 message_entry.pack(pady=5)
 
 examples = load_examples()
-placeholder = "Harmful example"
+placeholder = "Example"
 example_var = tk.StringVar(value=placeholder)
 
 button_frame = tk.Frame(frame)
