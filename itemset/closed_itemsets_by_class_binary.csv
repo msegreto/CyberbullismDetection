@@ -1,0 +1,57 @@
+class,itemset,support
+cyberbullying,ass,0.061295090731830044
+cyberbullying,bitch,0.05569707834072397
+cyberbullying,black,0.05868478158316822
+cyberbullying,bulli,0.21995785765952763
+cyberbullying,call,0.08563700978079693
+cyberbullying,dont,0.08881341007013241
+cyberbullying,dumb,0.12730760763594048
+cyberbullying,fuck,0.1648583199672925
+cyberbullying,gay,0.09950624272730131
+cyberbullying,get,0.07937855772557159
+cyberbullying,girl,0.12130075164323678
+cyberbullying,go,0.053778658363996604
+cyberbullying,high,0.12325062112777935
+cyberbullying,idiot,0.084253231436928
+cyberbullying,im,0.08956819825769727
+cyberbullying,islam,0.05233198100449728
+cyberbullying,joke,0.09912884863351888
+cyberbullying,know,0.055099537692235113
+cyberbullying,like,0.12960342170645028
+cyberbullying,make,0.06403119791175269
+cyberbullying,muslim,0.09868855552410605
+cyberbullying,nigger,0.13277982199578578
+cyberbullying,one,0.0806365380381797
+cyberbullying,peopl,0.09966349026637733
+cyberbullying,rape,0.10076422303990942
+cyberbullying,right,0.0501934144730635
+cyberbullying,rt,0.08230336195238544
+cyberbullying,say,0.06576092084158883
+cyberbullying,school,0.19476680189955028
+cyberbullying,think,0.05343271377802938
+cyberbullying,white,0.05069660659810674
+cyberbullying,"girl, bulli",0.10372047677453848
+cyberbullying,"bulli, high",0.11938233166650943
+cyberbullying,"bulli, school",0.1856778941409567
+cyberbullying,"fuck, dumb",0.12114350410416078
+cyberbullying,"dumb, nigger",0.11790420479919489
+cyberbullying,"fuck, nigger",0.11887913954146617
+cyberbullying,"joke, gay",0.08843601597634997
+cyberbullying,"rape, gay",0.0898512438280341
+cyberbullying,"girl, high",0.09629839293015065
+cyberbullying,"girl, school",0.09557505425040098
+cyberbullying,"high, school",0.11306098059565368
+cyberbullying,"muslim, idiot",0.0712331352014341
+cyberbullying,"rape, joke",0.08925370317954524
+cyberbullying,"girl, high, bulli",0.0959209988363682
+cyberbullying,"girl, school, bulli",0.09491461458628173
+cyberbullying,"bulli, high, school",0.11183444979086077
+cyberbullying,"fuck, dumb, nigger",0.11630027990061956
+cyberbullying,"rape, joke, gay",0.08610875239802497
+cyberbullying,"girl, high, school",0.08897065760920841
+cyberbullying,"girl, high, school, bulli",0.08868761203887159
+not_cyberbullying,bulli,0.14254247954688484
+not_cyberbullying,im,0.05286343612334802
+not_cyberbullying,like,0.05144745122718691
+not_cyberbullying,mkr,0.2001258653241032
+not_cyberbullying,rt,0.09628697293895531
