@@ -16,14 +16,16 @@ from utils.text_preprocessing import preprocess_text, TextPreprocessor #Run time
 from utils.bad_word_blurrer import blur_text
 from utils.two_stage_classifier import TwoStageClassifier
 
-multiclass_pipeline = load("../model/multiclass/RandomForest_TF-IDF_multiclass.pkl")
-binary_pipeline= load("../model/binary/RandomForest_TF-IDF.pkl")
+binary_pipeline = load("../model/final_pipeline_binary.pkl")
+multiclass_pipeline = load("../model/final_pipeline_multiclass.pkl")
 
 
 label_map = {
-    0: "ethnicity/race",
-    1: "gender/sexual",
-    2: "religion",
+    0: "age",
+    1: "ethnicity",
+    2: "gender",
+    3: "other_cyberbullying",
+    4: "religion"
 }
 
 pipeline_2stage = Pipeline([
@@ -87,9 +89,7 @@ def explanation_window(predicted_label, preprocessed):
     image_frame = tk.Frame(right_frame)
     image_frame.pack(side=tk.TOP, pady=10)
 
-    print(predicted_label)
-    safe_class = predicted_label.replace("/", "-")
-    image_filename = f"top_25_{safe_class}.png"
+    image_filename = f"top_25_{predicted_label}.png"
     image_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "word_class_distribution", image_filename))
 
     if os.path.isfile(image_path):
