@@ -25,14 +25,14 @@ religion,us,0.053923100969052826
 religion,want,0.05736167552360113
 religion,world,0.06220693966864645
 religion,your,0.05110972178805877
-religion,"terrorist, isi",0.05048452641450453
-religion,"islam, muslim",0.0692403876211316
+religion,"isi, terrorist",0.05048452641450453
+religion,"muslim, islam",0.0692403876211316
 religion,"islam, terror",0.10972178805876837
 religion,"islam, terrorist",0.05564238824632698
-religion,"say, muslim",0.052985307908721475
+religion,"muslim, say",0.052985307908721475
 religion,"muslim, terrorist",0.0525164113785558
-religion,"radic, christian, support",0.08705845576742732
-religion,"christian, right, woman",0.09956236323851203
+religion,"christian, radic, support",0.08705845576742732
+religion,"woman, right, christian",0.09956236323851203
 religion,"muslim, idiot, dont",0.06502031884964052
 religion,"jihad, human, terrorist",0.05110972178805877
 religion,"muslim, idiot, like",0.0665833072835261
@@ -46,64 +46,64 @@ gender,one,0.05236751332706178
 gender,say,0.07008466603951082
 gender,think,0.06820319849482596
 gender,women,0.09783631232361242
-gender,"rape, dont",0.05001567889620571
-gender,"im, rt",0.05017246785826278
+gender,"dont, rape",0.05001567889620571
+gender,"rt, im",0.05017246785826278
 gender,"sexist, im",0.06302916274694262
-gender,"sexist, rt",0.06506741925368455
-gender,"femal, call, bitch",0.0929758544998432
-gender,"joke, funni, gay",0.05064283474443399
-gender,"rape, funni, gay",0.05064283474443399
-gender,"joke, rape, funni",0.05158356851677642
-gender,"joke, rape, gay, like",0.05487613671997491
-gender,"make, rape, joke, gay",0.11774851050486046
-gender,"joke, rape, peopl, gay",0.0788648479147068
+gender,"rt, sexist",0.06506741925368455
+gender,"call, bitch, femal",0.0929758544998432
+gender,"gay, funni, joke",0.05064283474443399
+gender,"gay, funni, rape",0.05064283474443399
+gender,"joke, funni, rape",0.05158356851677642
+gender,"gay, like, rape, joke",0.05487613671997491
+gender,"gay, make, rape, joke",0.11774851050486046
+gender,"gay, peopl, rape, joke",0.0788648479147068
 age,"back, bulli",0.05223647169221145
-age,"back, school",0.051610885204879574
+age,"school, back",0.051610885204879574
 age,"make, bulli",0.051923678448545514
 age,"never, bulli",0.051610885204879574
 age,"time, bulli",0.05301845480137629
-age,"use, bulli",0.051923678448545514
-age,"make, school",0.05004691898654989
+age,"bulli, use",0.051923678448545514
+age,"school, make",0.05004691898654989
 age,"school, time",0.0505161088520488
 age,"school, dont, bulli",0.06083828589302471
 age,"school, friend, bulli",0.06318423522051923
 age,"school, go, bulli",0.06193306224585549
 age,"kid, school, bulli",0.07991867375664685
-age,"bulli, school, know",0.05505161088520488
-age,"look, school, bulli",0.060525492649358775
-age,"middl, school, bulli",0.08398498592430403
-age,"say, school, bulli",0.0505161088520488
-age,"school, think, bulli",0.050359712230215826
-age,"would, school, bulli",0.0713168595558336
-age,"bulli, school, year",0.060525492649358775
-age,"high, school, peopl, bulli",0.05004691898654989
-age,"girl, school, bulli, high, get",0.060369096027525805
-age,"girl, school, bulli, high, got",0.06099468251485768
-age,"im, girl, school, bulli, high",0.05614638723803566
-age,"girl, school, bulli, high, like",0.1019705974350954
-age,"one, girl, school, bulli, high",0.05817954332186425
+age,"school, know, bulli",0.05505161088520488
+age,"school, look, bulli",0.060525492649358775
+age,"school, middl, bulli",0.08398498592430403
+age,"school, say, bulli",0.0505161088520488
+age,"school, bulli, think",0.050359712230215826
+age,"school, would, bulli",0.0713168595558336
+age,"school, year, bulli",0.060525492649358775
+age,"school, bulli, peopl, high",0.05004691898654989
+age,"get, high, girl, school, bulli",0.060369096027525805
+age,"high, got, girl, school, bulli",0.06099468251485768
+age,"high, bulli, girl, school, im",0.05614638723803566
+age,"high, like, girl, school, bulli",0.1019705974350954
+age,"one, high, girl, school, bulli",0.05817954332186425
 ethnicity,dont,0.09436332234259695
 ethnicity,go,0.06280420788192809
 ethnicity,know,0.05087140838436175
 ethnicity,nigga,0.05024336630554247
 ethnicity,racist,0.05950698696812686
-ethnicity,"black, call",0.0629612184016329
-ethnicity,"black, fuck",0.054168629298162976
-ethnicity,"black, peopl",0.06578740775631968
-ethnicity,"black, white",0.07520803893860889
-ethnicity,"nigger, call",0.06563039723661486
-ethnicity,"color, racism",0.0566807976134401
-ethnicity,"im, fuck",0.05118542942377139
-ethnicity,"im, nigger",0.05730883969225938
-ethnicity,"peopl, nigger",0.05306955566022924
+ethnicity,"call, black",0.0629612184016329
+ethnicity,"fuck, black",0.054168629298162976
+ethnicity,"peopl, black",0.06578740775631968
+ethnicity,"white, black",0.07520803893860889
+ethnicity,"call, nigger",0.06563039723661486
+ethnicity,"racism, color",0.0566807976134401
+ethnicity,"fuck, im",0.05118542942377139
+ethnicity,"nigger, im",0.05730883969225938
+ethnicity,"nigger, peopl",0.05306955566022924
 ethnicity,"say, nigger",0.054168629298162976
 ethnicity,"white, nigger",0.06044905008635579
-ethnicity,"black, anyth, past",0.0675145234730727
-ethnicity,"disgust, black, nigger",0.054011618778458156
-ethnicity,"negro, white, call",0.07034071282775946
-ethnicity,"first, one, ur",0.07630711257654263
-ethnicity,"dumb, fuck, get, nigger",0.0527555346208196
-ethnicity,"dumb, fuck, nigger, like",0.0535405872193437
-ethnicity,"dumb, fuck, nigger, shit",0.06107709216517507
-ethnicity,"ass, nigger, bitch, fuck, dumb",0.054168629298162976
-ethnicity,"obama, ass, nigger, fuck, rt, dumb",0.0645313235986811
+ethnicity,"past, anyth, black",0.0675145234730727
+ethnicity,"nigger, disgust, black",0.054011618778458156
+ethnicity,"white, call, negro",0.07034071282775946
+ethnicity,"one, ur, first",0.07630711257654263
+ethnicity,"get, nigger, dumb, fuck",0.0527555346208196
+ethnicity,"dumb, nigger, like, fuck",0.0535405872193437
+ethnicity,"dumb, nigger, shit, fuck",0.06107709216517507
+ethnicity,"dumb, nigger, ass, bitch, fuck",0.054168629298162976
+ethnicity,"rt, dumb, nigger, obama, ass, fuck",0.0645313235986811
