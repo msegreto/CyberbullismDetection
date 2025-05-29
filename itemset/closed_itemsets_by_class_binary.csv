@@ -30,26 +30,26 @@ cyberbullying,say,0.06576092084158883
 cyberbullying,school,0.19476680189955028
 cyberbullying,think,0.05343271377802938
 cyberbullying,white,0.05069660659810674
-cyberbullying,"girl, bulli",0.10372047677453848
-cyberbullying,"bulli, high",0.11938233166650943
+cyberbullying,"bulli, girl",0.10372047677453848
+cyberbullying,"high, bulli",0.11938233166650943
 cyberbullying,"bulli, school",0.1856778941409567
-cyberbullying,"fuck, dumb",0.12114350410416078
-cyberbullying,"dumb, nigger",0.11790420479919489
-cyberbullying,"fuck, nigger",0.11887913954146617
-cyberbullying,"joke, gay",0.08843601597634997
-cyberbullying,"rape, gay",0.0898512438280341
-cyberbullying,"girl, high",0.09629839293015065
+cyberbullying,"dumb, fuck",0.12114350410416078
+cyberbullying,"nigger, dumb",0.11790420479919489
+cyberbullying,"nigger, fuck",0.11887913954146617
+cyberbullying,"gay, joke",0.08843601597634997
+cyberbullying,"gay, rape",0.0898512438280341
+cyberbullying,"high, girl",0.09629839293015065
 cyberbullying,"girl, school",0.09557505425040098
 cyberbullying,"high, school",0.11306098059565368
-cyberbullying,"muslim, idiot",0.0712331352014341
+cyberbullying,"idiot, muslim",0.0712331352014341
 cyberbullying,"rape, joke",0.08925370317954524
-cyberbullying,"girl, high, bulli",0.0959209988363682
-cyberbullying,"girl, school, bulli",0.09491461458628173
-cyberbullying,"bulli, high, school",0.11183444979086077
-cyberbullying,"fuck, dumb, nigger",0.11630027990061956
-cyberbullying,"rape, joke, gay",0.08610875239802497
-cyberbullying,"girl, high, school",0.08897065760920841
-cyberbullying,"girl, high, school, bulli",0.08868761203887159
+cyberbullying,"high, bulli, girl",0.0959209988363682
+cyberbullying,"bulli, girl, school",0.09491461458628173
+cyberbullying,"high, bulli, school",0.11183444979086077
+cyberbullying,"nigger, fuck, dumb",0.11630027990061956
+cyberbullying,"gay, rape, joke",0.08610875239802497
+cyberbullying,"high, girl, school",0.08897065760920841
+cyberbullying,"high, bulli, girl, school",0.08868761203887159
 not_cyberbullying,bulli,0.14254247954688484
 not_cyberbullying,im,0.05286343612334802
 not_cyberbullying,like,0.05144745122718691

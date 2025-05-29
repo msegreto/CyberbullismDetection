@@ -16,8 +16,8 @@ from utils.text_preprocessing import preprocess_text, TextPreprocessor #Run time
 from utils.bad_word_blurrer import blur_text
 from utils.two_stage_classifier import TwoStageClassifier
 
-binary_pipeline = load("../model/final_pipeline_binary.pkl")
-multiclass_pipeline = load("../model/final_pipeline_multiclass.pkl")
+binary_pipeline = load("../model/binary/LogisticRegression_TF-IDF.pkl")
+multiclass_pipeline = load("../model/multiclass/RandomForest_TF-IDF_multiclass.pkl")
 
 
 label_map = {
@@ -84,7 +84,7 @@ def explanation_window(predicted_label, preprocessed):
     right_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
     # ------------------------
-    # PICTURE RIGHT+BOTTOM
+    # PICTURE RIGHT+ UP
     # ------------------------
     image_frame = tk.Frame(right_frame)
     image_frame.pack(side=tk.TOP, pady=10)
@@ -124,8 +124,8 @@ def explanation_window(predicted_label, preprocessed):
 def load_itemsets_by_class(parent_frame, predicted_label, win_width):
     try:
         base_path = os.path.dirname(__file__)
-        closed_df = pd.read_csv(os.path.join(base_path, "..", "itemset", "closed_itemsets_by_class.csv"))
-        maximal_df = pd.read_csv(os.path.join(base_path, "..", "itemset", "maximal_itemsets_by_class.csv"))
+        closed_df = pd.read_csv(os.path.join(base_path, "..", "itemset", "closed_itemsets_by_class_multiclass.csv"))
+        maximal_df = pd.read_csv(os.path.join(base_path, "..", "itemset", "maximal_itemsets_by_class_multiclass.csv"))
 
         closed_items = closed_df[closed_df['class'] == predicted_label][['itemset', 'support']].values.tolist()
         maximal_items = maximal_df[maximal_df['class'] == predicted_label][['itemset', 'support']].values.tolist()
