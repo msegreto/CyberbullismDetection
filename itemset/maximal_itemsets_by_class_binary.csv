@@ -18,10 +18,10 @@ cyberbullying,rt,0.08230336195238544
 cyberbullying,say,0.06576092084158883
 cyberbullying,think,0.05343271377802938
 cyberbullying,white,0.05069660659810674
-cyberbullying,"idiot, muslim",0.0712331352014341
-cyberbullying,"nigger, fuck, dumb",0.11630027990061956
-cyberbullying,"gay, rape, joke",0.08610875239802497
-cyberbullying,"high, bulli, girl, school",0.08868761203887159
+cyberbullying,"muslim, idiot",0.0712331352014341
+cyberbullying,"dumb, fuck, nigger",0.11630027990061956
+cyberbullying,"joke, rape, gay",0.08610875239802497
+cyberbullying,"school, high, girl, bulli",0.08868761203887159
 not_cyberbullying,bulli,0.14254247954688484
 not_cyberbullying,im,0.05286343612334802
 not_cyberbullying,like,0.05144745122718691
