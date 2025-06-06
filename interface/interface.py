@@ -16,7 +16,7 @@ from utils.text_preprocessing import preprocess_text, TextPreprocessor #Run time
 from utils.bad_word_blurrer import blur_text
 from utils.two_stage_classifier import TwoStageClassifier
 
-binary_pipeline = load("../model/binary/LogisticRegression_BoW.pkl")
+binary_pipeline = load("../model/binary/LogisticRegression_TF-IDF.pkl")
 multiclass_pipeline = load("../model/multiclass/RandomForest_TF-IDF_multiclass.pkl")
 
 
