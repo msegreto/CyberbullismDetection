@@ -1,109 +1,107 @@
 class,itemset,support
-other_cyberbullying,bulli,0.11377436880792585
-other_cyberbullying,dont,0.05656759348034516
-other_cyberbullying,fuck,0.0685522531160115
-other_cyberbullying,get,0.06056248002556727
-other_cyberbullying,im,0.08852668584212209
-other_cyberbullying,like,0.05912432086928731
-other_cyberbullying,peopl,0.05289229785874081
-other_cyberbullying,rt,0.11105784595717481
-religion,amp,0.06830259456080025
-religion,call,0.054079399812441385
-religion,countri,0.06580181306658331
-religion,even,0.05767427321037824
-religion,get,0.05939356048765239
-religion,go,0.05376680212566427
-religion,india,0.05032822757111598
-religion,kill,0.0761175367302282
-religion,know,0.08596436386370741
-religion,make,0.05079712410128165
-religion,one,0.07908721475461082
-religion,quran,0.07142857142857142
-religion,religion,0.06423882463269771
-religion,think,0.06627070959674898
-religion,us,0.053923100969052826
-religion,want,0.05736167552360113
-religion,world,0.06220693966864645
-religion,your,0.05110972178805877
-religion,"terrorist, isi",0.05048452641450453
-religion,"islam, muslim",0.0692403876211316
-religion,"terror, islam",0.10972178805876837
-religion,"terrorist, islam",0.05564238824632698
-religion,"muslim, say",0.052985307908721475
-religion,"terrorist, muslim",0.0525164113785558
-religion,"radic, christian, support",0.08705845576742732
-religion,"right, woman, christian",0.09956236323851203
-religion,"idiot, muslim, dont",0.06502031884964052
-religion,"human, terrorist, jihad",0.05110972178805877
-religion,"idiot, muslim, like",0.0665833072835261
-religion,"idiot, muslim, peopl",0.052047514848390125
-gender,fuck,0.06538099717779869
-gender,get,0.06710567576042646
-gender,girl,0.051113201630605204
-gender,men,0.06506741925368455
-gender,mkr,0.08043273753527752
-gender,one,0.05236751332706178
-gender,say,0.07008466603951082
-gender,think,0.06820319849482596
-gender,women,0.09783631232361242
-gender,"rape, dont",0.05001567889620571
-gender,"rt, im",0.05017246785826278
-gender,"sexist, im",0.06302916274694262
-gender,"rt, sexist",0.06506741925368455
-gender,"bitch, femal, call",0.0929758544998432
-gender,"gay, joke, funni",0.05064283474443399
-gender,"gay, rape, funni",0.05064283474443399
-gender,"joke, rape, funni",0.05158356851677642
-gender,"rape, gay, like, joke",0.05487613671997491
-gender,"rape, make, gay, joke",0.11774851050486046
-gender,"rape, gay, peopl, joke",0.0788648479147068
-age,"bulli, back",0.05223647169221145
-age,"school, back",0.051610885204879574
-age,"bulli, make",0.051923678448545514
-age,"bulli, never",0.051610885204879574
-age,"time, bulli",0.05301845480137629
-age,"bulli, use",0.051923678448545514
-age,"school, make",0.05004691898654989
-age,"time, school",0.0505161088520488
-age,"bulli, school, dont",0.06083828589302471
-age,"bulli, school, friend",0.06318423522051923
-age,"bulli, school, go",0.06193306224585549
-age,"bulli, school, kid",0.07991867375664685
-age,"bulli, school, know",0.05505161088520488
-age,"bulli, school, look",0.060525492649358775
-age,"bulli, school, middl",0.08398498592430403
-age,"bulli, school, say",0.0505161088520488
-age,"bulli, school, think",0.050359712230215826
-age,"bulli, would, school",0.0713168595558336
-age,"bulli, year, school",0.060525492649358775
-age,"high, school, bulli, peopl",0.05004691898654989
-age,"get, high, bulli, school, girl",0.060369096027525805
-age,"got, high, bulli, school, girl",0.06099468251485768
-age,"high, im, bulli, school, girl",0.05614638723803566
-age,"high, bulli, school, girl, like",0.1019705974350954
-age,"high, bulli, school, one, girl",0.05817954332186425
-ethnicity,dont,0.09436332234259695
-ethnicity,go,0.06280420788192809
-ethnicity,know,0.05087140838436175
-ethnicity,nigga,0.05024336630554247
-ethnicity,racist,0.05950698696812686
-ethnicity,"black, call",0.0629612184016329
-ethnicity,"fuck, black",0.054168629298162976
-ethnicity,"black, peopl",0.06578740775631968
-ethnicity,"black, white",0.07520803893860889
-ethnicity,"nigger, call",0.06563039723661486
-ethnicity,"color, racism",0.0566807976134401
-ethnicity,"fuck, im",0.05118542942377139
-ethnicity,"nigger, im",0.05730883969225938
-ethnicity,"nigger, peopl",0.05306955566022924
-ethnicity,"nigger, say",0.054168629298162976
-ethnicity,"nigger, white",0.06044905008635579
-ethnicity,"anyth, past, black",0.0675145234730727
-ethnicity,"disgust, black, nigger",0.054011618778458156
-ethnicity,"negro, white, call",0.07034071282775946
-ethnicity,"first, ur, one",0.07630711257654263
-ethnicity,"get, fuck, nigger, dumb",0.0527555346208196
-ethnicity,"fuck, dumb, nigger, like",0.0535405872193437
-ethnicity,"fuck, shit, nigger, dumb",0.06107709216517507
-ethnicity,"dumb, fuck, bitch, nigger, ass",0.054168629298162976
-ethnicity,"dumb, rt, obama, fuck, nigger, ass",0.0645313235986811
+ethnicity,dont,0.09276729559748427
+ethnicity,go,0.06257861635220126
+ethnicity,know,0.05078616352201258
+ethnicity,nigga,0.05078616352201258
+ethnicity,racist,0.06006289308176101
+ethnicity,"black, call",0.06540880503144654
+ethnicity,"fuck, black",0.05408805031446541
+ethnicity,"black, peopl",0.06415094339622641
+ethnicity,"white, black",0.07562893081761006
+ethnicity,"call, nigger",0.0660377358490566
+ethnicity,"racism, color",0.05518867924528302
+ethnicity,"im, nigger",0.05550314465408805
+ethnicity,"peopl, nigger",0.051729559748427675
+ethnicity,"say, nigger",0.052830188679245285
+ethnicity,"white, nigger",0.058333333333333334
+ethnicity,"past, anyth, black",0.06713836477987421
+ethnicity,"black, disgust, nigger",0.051729559748427675
+ethnicity,"white, call, negro",0.07169811320754717
+ethnicity,"fuck, get, dumb",0.05125786163522013
+ethnicity,"get, dumb, nigger",0.05
+ethnicity,"ur, one, first",0.07484276729559748
+ethnicity,"fuck, get, nigger",0.05125786163522013
+ethnicity,"fuck, like, dumb, nigger",0.05377358490566038
+ethnicity,"fuck, dumb, shit, nigger",0.06037735849056604
+ethnicity,"nigger, fuck, bitch, ass, dumb",0.05849056603773585
+ethnicity,"nigger, fuck, obama, ass, rt, dumb",0.06446540880503145
+age,"back, bulli",0.05255748474894416
+age,"back, school",0.05146253715000782
+age,"bulli, make",0.05177537932113249
+age,"bulli, never",0.051931800406694824
+age,"bulli, time",0.05287032692006882
+age,"use, bulli",0.051931800406694824
+age,"time, school",0.050367589551071484
+age,"dont, bulli, school",0.06241201313937119
+age,"friend, bulli, school",0.06491475050836853
+age,"bulli, go, school",0.06178632879712185
+age,"bulli, school, kid",0.07993117472235257
+age,"know, bulli, school",0.055373064289066166
+age,"look, bulli, school",0.06084780228374785
+age,"bulli, middl, school",0.08321601751916158
+age,"bulli, school, say",0.05083685280775849
+age,"bulli, think, school",0.05114969497888315
+age,"bulli, would, school",0.07101517284529954
+age,"bulli, year, school",0.06084780228374785
+age,"high, bulli, peopl, school",0.050367589551071484
+age,"girl, get, bulli, high, school",0.06022211794149852
+age,"girl, bulli, got, high, school",0.05944001251368684
+age,"girl, bulli, high, im, school",0.05631159080244017
+age,"girl, bulli, like, high, school",0.10104802127326763
+age,"one, girl, bulli, high, school",0.057875801658063504
+other_cyberbullying,bulli,0.1355626752102523
+other_cyberbullying,dont,0.060072086503804564
+other_cyberbullying,fuck,0.07809371245494594
+other_cyberbullying,get,0.057068482178614335
+other_cyberbullying,im,0.08790548658390068
+other_cyberbullying,like,0.05987184621545855
+other_cyberbullying,peopl,0.052663195835002
+other_cyberbullying,rt,0.11874249098918703
+religion,amp,0.07180851063829788
+religion,call,0.05553817271589487
+religion,countri,0.06351689612015018
+religion,even,0.057728410513141426
+religion,get,0.059918648310387984
+religion,go,0.051783479349186486
+religion,india,0.05240926157697121
+religion,kill,0.07525031289111389
+religion,make,0.05100125156445557
+religion,one,0.07540675844806008
+religion,quran,0.0724342928660826
+religion,religion,0.0678973717146433
+religion,think,0.06648936170212766
+religion,us,0.05272215269086358
+religion,want,0.05929286608260326
+religion,world,0.06054443053817272
+religion,"human, jihad",0.05225281602002503
+religion,"human, terrorist",0.057571964956195244
+religion,"terrorist, isi",0.05193992490613267
+religion,"islam, muslim",0.06742803504380476
+religion,"islam, terror",0.10700876095118898
+religion,"terrorist, islam",0.055381727158948686
+religion,"jihad, terrorist",0.054130162703379225
+religion,"know, muslim",0.05193992490613267
+religion,"muslim, say",0.053035043804755946
+religion,"terrorist, muslim",0.050219023779724654
+religion,"christian, radic, support",0.08526282853566959
+religion,"woman, christian, right",0.0987171464330413
+religion,"dont, idiot, muslim",0.07180851063829788
+religion,"like, idiot, muslim",0.07352941176470588
+religion,"idiot, peopl, muslim",0.0516270337922403
+gender,fuck,0.06421426266537593
+gender,get,0.06631171345595353
+gender,girl,0.0505001613423685
+gender,men,0.06711842529848339
+gender,mkr,0.07163601161665054
+gender,one,0.05437237818651178
+gender,say,0.06905453372055502
+gender,think,0.06953856082607293
+gender,women,0.10116166505324298
+gender,"sexist, im",0.058728622136172956
+gender,"sexist, rt",0.06631171345595353
+gender,"call, bitch, femal",0.09454662794449822
+gender,"gay, dont, joke, rape",0.0505001613423685
+gender,"gay, rape, joke, funni",0.0505001613423685
+gender,"gay, rape, like, joke",0.05776056792513714
+gender,"gay, make, joke, rape",0.12294288480154889
+gender,"gay, rape, joke, peopl",0.08018715714746692

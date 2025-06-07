@@ -1,3 +1,6 @@
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
+
 import random
 from collections import Counter
 import nlpaug.augmenter.word as naw
