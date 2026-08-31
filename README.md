@@ -92,3 +92,9 @@ The models, classifications, and results produced by this project are experiment
 The software is provided "as is", without warranty of any kind. See the MIT License for details.
 
 ---
+
+### Dataset Availability
+
+Third-party datasets are **not included in this repository** and must be downloaded directly from their respective original sources listed above.
+
+This repository contains only the project source code and generated analysis outputs. Third-party datasets remain subject to their respective licenses and terms of use.
