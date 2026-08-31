@@ -1,7 +1,5 @@
 # Cyberbullying Detection System
 
-## English
-
 ### Introduction
 Cyberbullying is a rapidly growing issue fueled by the expansion of social networks. This project introduces a detection system based on tweets, combining a **two-stage classification pipeline** with an **explainability module** to ensure trust and transparency in the model’s decisions.  
 
@@ -46,9 +44,44 @@ Cyberbullying is a rapidly growing issue fueled by the expansion of social netwo
 This project deals with texts containing offensive or discriminatory language.  
 During preprocessing and documentation, most offensive terms were **obfuscated or masked**, but some may still appear in clear text.  
 If you are sensitive to such content, please be aware that it may occasionally emerge in the dataset, visualizations, or explanations.  
-The inclusion of these terms is solely for research and educational purposes, and does not reflect the views or intentions of the author.  
+The inclusion of these terms is solely for research and educational purposes, and does not reflect the views or intentions of the author. 
 
-Academic Disclaimer
+## Third-Party Datasets
+
+This project uses third-party datasets for research and educational purposes. These datasets are not authored by the repository owner and are not covered by the MIT License that applies to the source code of this repository.
+
+### Cyberbullying Classification
+
+- **Dataset:** Cyberbullying Classification
+- **Source:** Kaggle — Larxel (Andrew MVD)
+- **File:** `cyberbullying_tweets.csv`
+- **License:** Creative Commons Attribution 4.0 International (CC BY 4.0)
+- **Original research reference:** J. Wang, K. Fu, C. T. Lu, *SOSNet: A Graph Convolutional Network Approach to Fine-Grained Cyberbullying Detection*, IEEE BigData 2020.
+
+### Cyberbully Detection Dataset
+
+- **Dataset:** Cyberbully Detection Dataset
+- **Source:** Kaggle
+- **File:** `cb_multi_labeled_balanced.csv`
+- **Authors:** Mohamad Ahmadinejad, Nashid Shahriar, Lisa Fan
+- **License:** The Kaggle dataset page currently does not specify a license.
+
+This dataset remains subject to the terms and rights of its original authors and provider and is not covered by this repository's MIT License.
+
+### HateXplain-derived Dataset
+
+- **Dataset:** CyberBullying Detection Dataset / HateXplain-derived data
+- **Source:** Kaggle
+- **File:** `final_hateXplain.csv`
+- **Original dataset:** HateXplain
+
+Original reference:
+
+Binny Mathew, Punyajoy Saha, Seid Muhie Yimam, Chris Biemann, Pawan Goyal, and Animesh Mukherjee, *HateXplain: A Benchmark Dataset for Explainable Hate Speech Detection*, Proceedings of the AAAI Conference on Artificial Intelligence, 2021.
+
+The dataset and any derived data remain subject to the terms and attribution requirements of their respective original sources.
+
+## Academic Disclaimer
 
 This project was developed as part of university coursework for academic, research, and educational purposes.
 
