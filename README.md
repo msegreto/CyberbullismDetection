@@ -48,52 +48,14 @@ During preprocessing and documentation, most offensive terms were **obfuscated o
 If you are sensitive to such content, please be aware that it may occasionally emerge in the dataset, visualizations, or explanations.  
 The inclusion of these terms is solely for research and educational purposes, and does not reflect the views or intentions of the author.  
 
+Academic Disclaimer
+
+This project was developed as part of university coursework for academic, research, and educational purposes.
+
+The repository explores machine-learning techniques for cyberbullying detection and may contain datasets or examples including offensive, abusive, or otherwise sensitive language.
+
+The models, classifications, and results produced by this project are experimental and should not be considered suitable for automated moderation, profiling, or other production use without further review and validation.
+
+The software is provided "as is", without warranty of any kind. See the MIT License for details.
+
 ---
-
-## Italiano
-
-### Introduzione
-Il fenomeno del cyberbullismo è in costante crescita a causa della diffusione globale dei social network. Questo progetto propone un sistema di rilevamento del cyberbullismo basato sull’analisi di tweet, con una pipeline che integra **classificazione in due stadi** e un **modulo di spiegabilità** pensato per aumentare fiducia e trasparenza nelle decisioni del modello.  
-
-### Metodologia
-1. **Preprocessing dei dati**  
-   Pulizia del testo (minuscolizzazione, rimozione di URL/menzioni/punteggiatura, stopword, stemming) e creazione di etichette binarie per distinguere contenuti sicuri da quelli offensivi.  
-
-2. **Bilanciamento del dataset**  
-   Analisi della distribuzione delle classi e utilizzo di tecniche di data augmentation (sostituzione con sinonimi) per mantenere la naturalezza linguistica senza introdurre rumore artificiale.  
-
-3. **Estrazione delle feature**  
-   - **Bag of Words** per una rappresentazione semplice e frequenziale.  
-   - **TF-IDF** per valorizzare i termini più discriminativi.  
-   - **Word2Vec addestrato ad hoc** su dataset affini a cyberbullismo e contenuti offensivi (≈120k frasi pre-processate), così da catturare meglio relazioni semantiche e sintattiche del dominio.  
-
-4. **Classificazione in due stadi**  
-   - **Stadio 1**: rilevamento cyberbullismo vs non-cyberbullismo.  
-   - **Stadio 2**: classificazione fine-grained per identificare il tipo specifico (età, genere, religione, ecc.).  
-   L’uso della validazione annidata (nested cross-validation) assicura iperparametri ottimali e valutazioni non distorte.  
-
-5. **Modulo di Explainability (focus principale)**  
-   - **Globale**:  
-     - Analisi delle feature importance del Random Forest.  
-     - Pattern mining con itemset chiusi e massimali per scoprire strutture linguistiche ricorrenti nelle classi di cyberbullismo.  
-   - **Locale**:  
-     - Uso di TreeInterpreter per scomporre le decisioni a livello di singolo tweet, evidenziando parole presenti e **assenze significative** che influenzano la classificazione.  
-   Questo approccio bilancia comprensione ad alto livello (pattern e feature globali) con interpretabilità puntuale (analisi di predizioni specifiche).  
-
-6. **Interfaccia Grafica (GUI)**  
-   Applicazione Tkinter con due viste:  
-   - Classificazione (output binario/multiclasse).  
-   - Spiegazione (feature contribuenti, distribuzione parole, itemset rappresentativi).  
-
-### Punti di Forza
-- Embedding **Word2Vec custom** mirato al dominio.  
-- Pipeline modulare e scalabile.  
-- **Approccio a due stadi**, realistico e interpretabile.  
-- **Explainability integrata**, con metodi globali e locali che garantiscono trasparenza.  
-- GUI intuitiva e accessibile.  
-
-### Disclaimer
-Il progetto utilizza testi contenenti termini offensivi o discriminatori.  
-Durante il preprocessing e la documentazione, la maggior parte delle parole offensive è stata **oscurata o mascherata**, ma qualcuna potrebbe essere rimasta in chiaro.  
-Chi fosse particolarmente sensibile a questo tipo di contenuti è pregato di tenere presente che essi potrebbero comunque comparire nei dataset, nelle visualizzazioni o nelle spiegazioni.  
-L’inclusione di tali termini ha esclusivamente finalità di ricerca e studio e **non riflette in alcun modo le opinioni dell’autore**.  
