@@ -1,5 +1,11 @@
 # Cyberbullying Detection System
 
+### Disclaimer
+This project deals with texts containing offensive or discriminatory language.  
+During preprocessing and documentation, most offensive terms were **obfuscated or masked**, but some may still appear in clear text.  
+If you are sensitive to such content, please be aware that it may occasionally emerge in the dataset, visualizations, or explanations.  
+The inclusion of these terms is solely for research and educational purposes, and does not reflect the views or intentions of the author. 
+
 ### Introduction
 Cyberbullying is a rapidly growing issue fueled by the expansion of social networks. This project introduces a detection system based on tweets, combining a **two-stage classification pipeline** with an **explainability module** to ensure trust and transparency in the model’s decisions.  
 
@@ -40,12 +46,6 @@ Cyberbullying is a rapidly growing issue fueled by the expansion of social netwo
 - **Strong explainability integration**, combining global insights and local instance-level transparency.  
 - User-friendly GUI accessible to non-technical users.  
 
-### Disclaimer
-This project deals with texts containing offensive or discriminatory language.  
-During preprocessing and documentation, most offensive terms were **obfuscated or masked**, but some may still appear in clear text.  
-If you are sensitive to such content, please be aware that it may occasionally emerge in the dataset, visualizations, or explanations.  
-The inclusion of these terms is solely for research and educational purposes, and does not reflect the views or intentions of the author. 
-
 ## Third-Party Datasets
 
 This project uses third-party datasets for research and educational purposes. These datasets are not authored by the repository owner and are not covered by the MIT License that applies to the source code of this repository.
@@ -81,6 +81,12 @@ Binny Mathew, Punyajoy Saha, Seid Muhie Yimam, Chris Biemann, Pawan Goyal, and A
 
 The dataset and any derived data remain subject to the terms and attribution requirements of their respective original sources.
 
+### Dataset Availability
+
+Third-party datasets are **not included in this repository** and must be downloaded directly from their respective original sources listed above.
+
+This repository contains only the project source code and generated analysis outputs. Third-party datasets remain subject to their respective licenses and terms of use.
+
 ## Academic Disclaimer
 
 This project was developed as part of university coursework for academic, research, and educational purposes.
@@ -93,8 +99,3 @@ The software is provided "as is", without warranty of any kind. See the MIT Lice
 
 ---
 
-### Dataset Availability
-
-Third-party datasets are **not included in this repository** and must be downloaded directly from their respective original sources listed above.
-
-This repository contains only the project source code and generated analysis outputs. Third-party datasets remain subject to their respective licenses and terms of use.
